@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.v7idea.template.View.Banner
+        android:id="@+id/UserHealthInformation_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <ScrollView
+        android:id="@+id/UserHealthInformation_LockScrollView_ScrollArea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="38px"
+        android:paddingLeft="@dimen/activity_padding_left"
+        android:paddingRight="@dimen/activity_padding_right"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/UserHealthInformation_LinearLayout_ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/UserHealthInformation_RelativeLayout_Family"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserHealthInformation_TextView_Family"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/UserHealthInformation_Text_Family"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/UserHealthInformation_EditText_Family"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/UserHealthInformation_TextView_Family"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserHealthInformation_RelativeLayout_Smoke"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserHealthInformation_TextView_Smoke"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/UserHealthInformation_Text_Smoke"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/UserHealthInformation_EditText_Smoke"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/UserHealthInformation_TextView_Smoke"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserHealthInformation_RelativeLayout_Drink"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserHealthInformation_TextView_Drink"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/UserHealthInformation_Text_Drink"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/UserHealthInformation_Editext_Drink"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/UserHealthInformation_TextView_Drink"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

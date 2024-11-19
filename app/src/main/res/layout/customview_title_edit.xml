@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/TitleEditTextView_RelativeLayout_Container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gray_frame_white_content">
+
+    <TextView
+        android:id="@+id/TitleEditTextView_TextView_Title"
+        android:layout_width="200px"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20px"
+        android:gravity="left|center_vertical"
+        android:text="@string/RegisterPage_Text_LastName"
+        android:textColor="@color/color_666666"
+        android:textSize="36px" />
+
+    <EditText
+        android:id="@+id/TitleEditTextView_EditText_Value"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@+id/TitleEditTextView_TextView_Title"
+        android:background="@null"
+        android:hint="@string/RegisterPage_Hint_LastName"
+        android:singleLine="true"
+        android:textSize="36px" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/FunctionListItem_RelativeLayout_Container"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:background="@drawable/list_item_select">
+
+        <RelativeLayout
+            android:id="@+id/FunctionListItem_RelativeLayout_IconContainer"
+            android:layout_width="100px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="24px">
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/FunctionListItem_AutoReleaseImageView_Icon"
+                android:layout_width="72px"
+                android:layout_height="72px"
+                android:layout_centerInParent="true"
+                android:scaleType="fitXY" />
+
+        </RelativeLayout>
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/FunctionListItem_AutoReleaseImageView_ShowTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/FunctionListItem_RelativeLayout_AlertIconContainer"
+            android:layout_toRightOf="@+id/FunctionListItem_RelativeLayout_IconContainer"
+            android:gravity="center_vertical"
+            android:text="XXX"
+            android:textColor="@color/color_666666"
+            android:textSize="36px" />
+
+        <RelativeLayout
+            android:id="@+id/FunctionListItem_RelativeLayout_AlertIconContainer"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true">
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/FunctionListItem_AutoReleaseImageView_AlertIcon"
+                android:layout_width="64px"
+                android:layout_height="64px"
+                android:layout_centerInParent="true"
+                android:background="@mipmap/icon_alert_cycle"
+                android:gravity="center"
+                android:text="!"
+                android:textColor="@android:color/white"
+                android:textSize="40px" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/FunctionListItem_AutoReleaseImageView_divider"
+        android:layout_width="match_parent"
+        android:layout_height="20px" />
+
+</LinearLayout>

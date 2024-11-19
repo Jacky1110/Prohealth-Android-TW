@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.LiftSuggestListPage">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/LiftSuggestListPage_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"/>
+
+    <ListView
+        android:id="@+id/LiftSuggestListPage_ListView_ShowList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:layout_below="@+id/LiftSuggestListPage_Banner_Header"
+        android:layout_above="@+id/LiftSuggestListPage_BottomButton_BottomButton"
+        android:dividerHeight="2px"
+        android:divider="@color/color_A1E6F6"
+        android:listSelector="@android:color/transparent"/>
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/LiftSuggestListPage_BottomButton_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:layout_marginBottom="28px"/>
+
+</RelativeLayout>

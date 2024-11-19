@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.UserBasicInformation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.v7idea.template.View.Banner
+            android:id="@+id/UserBasicInformation_Banner_Header"
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <LinearLayout
+            android:id="@+id/UserBasicInformation_LinearLayout_Container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_left"
+            android:paddingRight="@dimen/activity_padding_right">
+
+
+            <com.v7idea.healthkit.Model.CircleImageView
+                android:id="@+id/UserBasicInformation_AutoReleaseImageView_BannerImage"
+                android:layout_width="160px"
+                android:layout_height="160px"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36px"
+                android:background="@mipmap/icon_user_photo"
+                android:scaleType="centerCrop"
+                android:shape="oval" />
+
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/UserBasicInformation_V7TitleView_EditPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:layout_marginTop="18px"
+                android:gravity="center_horizontal"
+                android:paddingLeft="@dimen/activity_padding_left"
+                android:paddingRight="@dimen/activity_padding_right"
+                android:text="@string/UserBasicInformation_EditPhoto"
+                android:textColor="@color/color_AAE3F3"
+                android:textSize="37px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_LastName"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_Height"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_Email"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/UserBasicInformation_LinearLayout_Container2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_padding_left"
+            android:paddingRight="@dimen/activity_padding_right"
+            android:visibility="visible">
+
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/UserBasicInformation_V7TitleView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:layout_marginTop="43px"
+                android:layout_marginBottom="43px"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="@dimen/activity_padding_left"
+                android:paddingRight="@dimen/activity_padding_right"
+                android:text="@string/UserBasicInformation_Text_Page2_Title"
+                android:textColor="@color/color_A1E6F6"
+                android:textSize="40px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/UserBasicInformation_TitleEditTextView_Mobile"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="20px" />
+
+
+            <RelativeLayout
+                android:id="@+id/UserBasicInformation_RelativeLayout_Birthday"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="17px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserBasicInformation_TextView_Birthday"
+                    android:layout_width="165px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="55px"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/UserBasicInformation_Text_Birthday"
+                    android:textColor="@color/color_626262"
+                    android:textSize="35px" />
+
+                <LinearLayout
+                    android:id="@+id/UserBasicInformation_LinearLayout_BirthdayContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/UserBasicInformation_TextView_Birthday"
+                    android:background="@null">
+
+                    <EditText
+                        android:id="@+id/UserBasicInformation_Editext_Birthday_Year"
+                        android:layout_width="225px"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:hint="@string/UserBasicInformation_Hint_Birthday_Year"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:textSize="40px" />
+
+                    <TextView
+                        android:id="@+id/UserBasicInformation_TextView_Dividing_Line"
+                        android:layout_width="50px"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="/"
+                        android:textSize="40px" />
+
+                    <EditText
+                        android:id="@+id/UserBasicInformation_Editext_Birthday_Ｍonth"
+                        android:layout_width="225px"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:hint="@string/UserBasicInformation_Hint_Birthday_Ｍonth"
+                        android:inputType="phone"
+                        android:maxLength="2"
+                        android:singleLine="true"
+                        android:textSize="40px" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserBasicInformation_RelativeLayout_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="17px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserBasicInformation_TextView_Gender"
+                    android:layout_width="165px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="55px"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/UserBasicInformation_Text_Gender"
+                    android:textColor="@color/color_626262"
+                    android:textSize="35px" />
+
+                <RelativeLayout
+                    android:id="@+id/UserBasicInformation_RelativeLayout_GenderContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/UserBasicInformation_TextView_Gender"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_GenderContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30px"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_Gender_Female"
+                            android:layout_width="210px"
+                            android:layout_height="50px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Gender_Female"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_Gender_Male"
+                            android:layout_width="210px"
+                            android:layout_height="50px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/UserBasicInformation_Button_Gender_Female"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Gender_Male"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/UserBasicInformation_RelativeLayout_BloodType"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginTop="17px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/UserBasicInformation_TextView_BloodType"
+                    android:layout_width="165px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="55px"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/RegisterPage2_Text_BloodType"
+                    android:textColor="@color/color_626262"
+                    android:textSize="35px" />
+
+                <RelativeLayout
+                    android:id="@+id/UserBasicInformation_RelativeLayout_BloodTypeContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/UserBasicInformation_TextView_BloodType"
+                    android:background="@null">
+
+                    <LinearLayout
+                        android:id="@+id/LinearLayout_BloodTypeContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="30px"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_BloodType_A"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/UserBasicInformation_Button_BloodType_B"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Blood_A"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_BloodType_B"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_centerVertical="true" android:layout_toLeftOf="@+id/UserBasicInformation_Button_BloodType_O"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Blood_B"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_BloodType_O"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/UserBasicInformation_Button_BloodType_AB"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Blood_O"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+
+
+                        <Button
+                            android:id="@+id/UserBasicInformation_Button_BloodType_AB"
+                            android:layout_width="100px"
+                            android:layout_height="50px"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/button_sex_selector"
+                            android:text="@string/UserBasicInformation_Init_Blood_AB"
+                            android:textColor="@drawable/button_textcolor_selector"
+                            android:textSize="25px" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/UserBasicInformation_LinearLayout_ButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:layout_marginBottom="28px">
+
+        <Button
+
+            android:id="@+id/UserBasicInformation_Button_Back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/UserBasicInformation_Text_Back"
+            android:textColor="@drawable/button_textcolor_selector"
+            android:textSize="35px" />
+
+
+        <Button
+            android:id="@+id/UserBasicInformation_Button_Next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4px"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/UserBasicInformation_Text_Next"
+            android:textColor="@drawable/button_textcolor_selector"
+            android:textSize="35px" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/UserBasicInformation_LinearLayout_Page2_ButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="28px"
+        android:layout_marginBottom="28px"
+        android:visibility="gone">
+
+        <Button
+
+            android:id="@+id/UserBasicInformation_Button_Page2_Back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/UserBasicInformation_Text_Back"
+            android:textColor="@drawable/button_textcolor_selector"
+            android:textSize="35px" />
+
+
+        <Button
+            android:id="@+id/UserBasicInformation_Button_Page2_Next"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4px"
+            android:layout_weight="1"
+            android:background="@drawable/button_selector"
+            android:text="@string/UserBasicInformation_Text_Save"
+            android:textColor="@drawable/button_textcolor_selector"
+            android:textSize="35px" />
+    </LinearLayout>
+
+</RelativeLayout>

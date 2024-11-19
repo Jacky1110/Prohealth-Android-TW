@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/lifeSuggest_TextView_dateTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12px"
+        android:textSize="24px"
+        android:gravity="center_vertical|left"
+        android:textColor="@color/color_A1E6F6"/>
+
+    <TextView
+        android:id="@+id/lifeSuggest_TextView_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lifeSuggest_TextView_dateTime"
+        android:layout_marginTop="6px"
+        android:layout_marginBottom="10px"
+        android:textSize="28px"
+        android:gravity="center_vertical"
+        android:textColor="@color/color_666666"/>
+
+</RelativeLayout>

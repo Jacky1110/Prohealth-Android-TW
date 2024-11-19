@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.ConnectedPage">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/ConnectedPage_AutoReleaseImageView_Banner"
+        android:layout_width="match_parent"
+        android:layout_height="412px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/photo_device_with_hand2" />
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/ConnectedPage_AutoReleaseImageView_BackImage"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_header_icon_home_blue" />
+
+    <TextView
+        android:id="@+id/ConnectedPage_TextView_MiddleTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56px"
+        android:layout_below="@+id/ConnectedPage_AutoReleaseImageView_Banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px"
+        android:layout_marginTop="34px"
+        android:gravity="center_vertical"
+        android:text="@string/ConnectedPage_Text_MiddleTitle"
+        android:textColor="@color/color_ACE4F4"
+        android:textSize="@dimen/TextSize" />
+
+    <LinearLayout
+        android:id="@+id/ConnectedPage_LinearLayout_AlertTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ConnectedPage_TextView_NextStep"
+        android:layout_below="@+id/ConnectedPage_TextView_MiddleTitle"
+        android:layout_marginBottom="42px"
+        android:layout_marginLeft="51px"
+        android:layout_marginRight="51px"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/ConnectedPage_TextView_AlertTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/ConnectedPage_Text_Alert"
+            android:textColor="@color/color_9B9B9B"
+            android:textSize="30px" />
+
+        <TextView
+            android:id="@+id/ConnectedPage_TextView_AlertTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top"
+            android:lineSpacingMultiplier="1.2"
+            android:text="@string/ConnectedPage_Text_Alert2"
+            android:textColor="@android:color/black"
+            android:textSize="30px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ConnectedPage_TextView_NextStep"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28px"
+        android:layout_marginLeft="27px"
+        android:layout_marginRight="27px"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:text="@string/ConnectedPage_Text_startDetection"
+        android:textColor="@color/color_666666"
+        android:textSize="35px" />
+
+
+</RelativeLayout>

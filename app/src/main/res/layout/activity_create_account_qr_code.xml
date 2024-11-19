@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.CreateAccountQRcodePage"
+    android:background="@android:color/white">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/Create_account_QRcodePage_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        />
+    
+    <TextView
+        android:id="@+id/Create_account_QRcodePage_TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30px"
+        android:paddingLeft="@dimen/activity_padding_left"
+        android:paddingRight="@dimen/activity_padding_right"
+        android:text="這是妳的帳號QR Code\n使用平板登入時，請將條碼對準平板攝像頭"
+        android:textSize="40px"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/Create_account_QRcodePage_QRcode_ImageView"
+            android:layout_width="500px"
+            android:layout_height="500px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100px"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

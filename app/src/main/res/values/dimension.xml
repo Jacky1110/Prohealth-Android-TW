@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="dimen" name="activity_padding_left">27px</item>
+    <item type="dimen" name="activity_padding_right">27px</item>
+    <item type="dimen" name="activity_Header_height">36dp</item>
+    <item type="dimen" name="TextSize">40px</item>
+    <item type="dimen" name="backIconWidth">64px</item>
+    <item type="dimen" name="backIconHeight">64px</item>
+    <item type="dimen" name="activity_banner_header">100px</item>
+
+
+</resources>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.HealthRecommendationPage2">
+
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/InspectionReport_Banner_Header2"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <RelativeLayout
+        android:id="@+id/InspectionReport_RelativeLayout_ReportPanel2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/InspectionReport_Banner_Header2">
+
+        <WebView
+            android:id="@+id/InspectionReport_WebView_ShowWebView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/InspectionReport_V7TitleView_PrePageButton2" />
+
+        <com.v7idea.template.View.V7TitleView
+            android:visibility="gone"
+            android:id="@+id/InspectionReport_V7TitleView_PrePageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="@string/InspectionReportPage_Text_Button_More"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/TextSize" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

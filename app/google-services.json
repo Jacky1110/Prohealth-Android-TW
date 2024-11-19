@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "883220343293",
+    "firebase_url": "https://nirplus-c07cf.firebaseio.com",
+    "project_id": "nirplus-c07cf",
+    "storage_bucket": "nirplus-c07cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:883220343293:android:fae4f1e486373ad6",
+        "android_client_info": {
+          "package_name": "com.prohealth.nirplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "883220343293-vb2r6vb5v5lk85oe0ogmn7km2nc9r94b.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prohealth.nirplus",
+            "certificate_hash": "3974e61f8f41745fb7c667d88e0c3c8b30d392dc"
+          }
+        },
+        {
+          "client_id": "883220343293-nhrsuv6504j37gtobm4t9sra7eqkc959.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prohealth.nirplus",
+            "certificate_hash": "a7547486aebbb8dbbb9d2d6abfaeb2e030e6b5d2"
+          }
+        },
+        {
+          "client_id": "883220343293-kfrn1eeqsjol8ldehagqt6qj680o1abj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBwvA6FC-FvTEe48hLzqVFGhYqL7AcFEo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "883220343293-kfrn1eeqsjol8ldehagqt6qj680o1abj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

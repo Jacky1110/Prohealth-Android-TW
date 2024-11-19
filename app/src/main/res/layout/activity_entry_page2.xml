@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/entryPage2_ViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="1180px" />
+
+    <RelativeLayout
+        android:id="@+id/entryPage2_RelativeLayout_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/entryPage2_ViewPager">
+
+        <ImageView
+            android:id="@+id/entryPage2_ImageView_Ball"
+            android:layout_width="220px"
+            android:layout_height="20px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5px"
+            android:background="@mipmap/dot_page_1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/entryPage2_TextView_NextPage"
+            android:layout_width="260px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="34px"
+            android:background="@null"
+            android:gravity="center"
+            android:text="下一步"
+            android:textSize="35px" />
+
+        <TextView
+            android:id="@+id/entryPage2_TextView_Skip"
+            android:layout_width="260px"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="34px"
+            android:background="@null"
+            android:gravity="center"
+            android:text="略過"
+            android:textSize="35px" />
+    </RelativeLayout>
+
+</RelativeLayout>

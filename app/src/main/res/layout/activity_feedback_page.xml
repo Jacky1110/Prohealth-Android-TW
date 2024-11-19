@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.FeedbackPage">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/FeedbackPage_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <ScrollView
+        android:id="@+id/FeedbackPage_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/FeedbackPage_Banner_Header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/FeedbackPage_TextView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_marginLeft="27px"
+                android:layout_marginRight="27px"
+                android:layout_marginTop="26px"
+                android:text="@string/FeedbackPage_Text_MiddleTitle"
+                android:textColor="@color/color_9B9B9B"
+                android:textSize="36px" />
+
+            <TextView
+                android:id="@+id/FeedbackPage_TextView_TypeTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FeedbackPage_TextView_Title"
+                android:layout_marginLeft="27px"
+                android:layout_marginTop="24px"
+                android:text="類別"
+                android:textColor="@color/color_A1E6F6"
+                android:textSize="40px" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/FeedbackPage_RecyclerView_Type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FeedbackPage_TextView_TypeTitle"
+                android:layout_marginTop="10px"
+                android:paddingLeft="27px"
+                android:paddingRight="27px" />
+
+            <TextView
+                android:id="@+id/FeedbackPage_TextView_DataTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FeedbackPage_RecyclerView_Type"
+                android:layout_marginLeft="27px"
+                android:layout_marginTop="26px"
+                android:text="內容"
+                android:textColor="@color/color_A1E6F6"
+                android:textSize="40px" />
+
+            <EditText
+                android:id="@+id/FeedbackPage_EditText_Data"
+                android:layout_width="match_parent"
+                android:layout_height="660px"
+                android:layout_below="@+id/FeedbackPage_TextView_DataTitle"
+                android:layout_marginLeft="27px"
+                android:layout_marginRight="27px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/gray_frame_white_content"
+                android:gravity="left|top"
+                android:paddingLeft="5px"
+                android:paddingTop="5px"
+                android:textSize="28px" />
+
+            <com.v7idea.healthkit.View.BottomButton
+                android:id="@+id/FeedbackPage_BottomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/FeedbackPage_EditText_Data"
+                android:layout_marginBottom="40px"
+                android:layout_marginLeft="27px"
+                android:layout_marginRight="27px"
+                android:layout_marginTop="24px" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
+

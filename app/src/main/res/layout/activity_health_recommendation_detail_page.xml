@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.HealthRecommendationDetailPage">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/HealthRecommendationDetailPage_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+
+    <com.v7idea.template.View.ListScrollView
+        android:id="@+id/HealthRecommendationDetailPage_ListScrollView_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/HealthRecommendationDetailPage_Banner_Header">
+
+    </com.v7idea.template.View.ListScrollView>
+
+    <RelativeLayout
+        android:id="@+id/HealthRecommendationDetailPage_RelativeLayout_BannerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="620px"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100px">
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/HealthRecommendationDetailPage_V7TitleView_MiddleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="230px"
+            android:textSize="50px"
+            android:paddingLeft="27px"
+            android:paddingRight="27px"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/color_476F6B"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

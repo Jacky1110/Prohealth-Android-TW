@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.CheckWeightPage">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/CheckWeightPage_SpecialImageView_Header"
+        android:layout_width="match_parent"
+        android:layout_height="36px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_color_header" />
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/CheckWeightPage_ScrollArea"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_below="@+id/CheckWeightPage_SpecialImageView_Header"-->
+    <!--android:fillViewport="true"-->
+    <!--android:paddingLeft="@dimen/activity_padding_left"-->
+    <!--android:paddingRight="@dimen/activity_padding_right"-->
+    <!--android:scrollbars="none">-->
+
+    <LinearLayout
+        android:id="@+id/CheckWeightPage_LinearLayout_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/CheckCodePage_BottomButton"
+        android:layout_below="@+id/CheckWeightPage_SpecialImageView_Header"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:layout_marginTop="27px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/CheckWeightPage_RelativeLayout_TopBannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/CheckWeightPage_SpecialImageView_TopBannerBackground"
+                android:layout_width="696px"
+                android:layout_height="334px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/photo_weight" />
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/CheckWeightPage_V7TitleView_TopBannerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="56px"
+                android:layout_below="@+id/CheckWeightPage_SpecialImageView_TopBannerBackground"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32px"
+                android:gravity="center"
+                android:textColor="@color/color_9B9B9B"
+                android:textSize="40px" />
+
+        </RelativeLayout>
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/CheckWeightPage_V7TitleView_Status"
+            android:layout_width="match_parent"
+            android:layout_height="50px"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="68px"
+            android:layout_marginTop="67px"
+            android:gravity="center"
+            android:textColor="@color/color_ACE4F4"
+            android:textSize="36px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question1_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CheckWeightPage_Text_Question1_Label"
+                android:textColor="@color/color_626262"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question1_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:paddingLeft="10px"
+                android:text="@string/CheckWeightPage_Text_Question1_Title"
+                android:textColor="@color/color_626262"
+                android:textSize="32px" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/CheckWeightPage_RelativeLayout_WeightContainer"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_marginBottom="35px"
+            android:layout_marginTop="20px"
+            android:background="@drawable/gray_frame_white_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Weight"
+                android:layout_width="220px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/CheckWeightPage_Text_Weight"
+                android:textColor="@color/color_626262"
+                android:textSize="30px" />
+
+            <EditText
+                android:id="@+id/CheckWeightPage_EditText_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/CheckWeightPage_TextView_Weight"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="@string/CheckWeightPage_Hint_Weight"
+                android:inputType="phone"
+                android:paddingLeft="60px"
+                android:singleLine="true"
+                android:textSize="30px" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question2_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CheckWeightPage_Text_Question2_Label"
+                android:textColor="@color/color_626262"
+                android:textSize="32px" />
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question2_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="15px"
+                android:paddingLeft="10px"
+                android:text="@string/CheckWeightPage_Text_Question2_Title"
+                android:textColor="@color/color_626262"
+                android:textSize="32px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckWeightPage_LinearLayout_Question2Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginTop="17px"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question2_Answer1"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer1"
+                android:layout_weight="1"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question2_Answer2"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer2"
+                android:layout_weight="1"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question2_Answer3"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer3"
+                android:layout_weight="1"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question3_Label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CheckWeightPage_Text_Question3_Label"
+                android:textColor="@color/color_626262"
+                android:textSize="30px" />
+
+            <TextView
+                android:id="@+id/CheckWeightPage_TextView_Question3_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:lineSpacingExtra="15px"
+                android:paddingLeft="10px"
+                android:text="@string/CheckWeightPage_Text_Question3_Title"
+                android:textColor="@color/color_626262"
+                android:textSize="32px" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/CheckWeightPage_LinearLayout_Question3Container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="35px"
+            android:layout_marginTop="17px"
+            android:weightSum="3"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question3_Answer1"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer1"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question3_Answer2"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer2"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+
+            <Button
+                android:id="@+id/CheckWeightPage_Button_Question3_Answer3"
+                android:layout_width="210px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:layout_marginLeft="30px"
+                android:background="@drawable/button_sex_selector"
+                android:text="@string/CheckWeightPage_Text_Answer3"
+                android:textColor="@drawable/button_textcolor_selector"
+                android:textSize="27px" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/CheckCodePage_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28px"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right" />
+    <!--</ScrollView>-->
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.RegisterComplete">
+
+    <!--<ScrollView-->
+    <!--android:id="@+id/RegisterComplete_ScrollView_ScrollView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_alignParentStart="true"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:fillViewport="true">-->
+
+    <LinearLayout
+        android:id="@+id/RegisterComplete_LinearLayout_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/RegisterComplete_BottomButton"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/RegisterComplete_RelativeLayout_TopBanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/RegisterComplete_SpecialImageView_Background"
+                android:layout_width="match_parent"
+                android:layout_height="36px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:scaleType="fitXY"
+                android:src="@mipmap/top_color_header" />
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/RegisterComplete_SpecialImageView_TopBannerBackground"
+                android:layout_width="696px"
+                android:layout_height="558px"
+                android:layout_below="@+id/RegisterComplete_SpecialImageView_Background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="30px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/page_login_banner" />
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/RegisterComplete_V7TitleView_TopBannerTitle"
+                android:layout_width="match_parent"
+                android:layout_height="112px"
+                android:layout_below="@+id/RegisterComplete_SpecialImageView_TopBannerBackground"
+                android:layout_marginBottom="96px"
+                android:layout_marginTop="96px"
+                android:gravity="center"
+                android:lineSpacingExtra="15px"
+                android:paddingLeft="@dimen/activity_padding_left"
+                android:paddingRight="@dimen/activity_padding_right"
+                android:text="@string/RegisterCompletePage_Text_title"
+                android:textColor="@color/color_D0D0D0"
+                android:textSize="40px" />
+        </RelativeLayout>
+
+        <com.v7idea.template.View.AutoReleaseImageView
+            android:id="@+id/RegisterComplete_SpecialImageView_Logo"
+            android:layout_width="260px"
+            android:layout_height="186px"
+            android:layout_below="@+id/RegisterComplete_V7TitleView_TopBannerTitle"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="fitXY"
+            android:src="@mipmap/logo_blue" />
+
+
+    </LinearLayout>
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/RegisterComplete_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28px"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        />
+    <!--</ScrollView>-->
+
+</RelativeLayout>

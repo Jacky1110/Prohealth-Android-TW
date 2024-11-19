@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.BluetoothErrorMessagePage">
+
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="626px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/photo_device_with_hand" />
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BackImage"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_alignLeft="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BannerImage"
+        android:layout_alignTop="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BannerImage"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_header_icon_home_blue" />
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_errorIcon"
+        android:layout_width="330px"
+        android:layout_height="330px"
+        android:layout_alignTop="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BannerImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_ble_scan_error"
+        android:visibility="visible" />
+
+
+    <RelativeLayout
+        android:id="@+id/BluetoothErrorMessagePage_RelativeLayout_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/BluetoothErrorMessagePage_AutoReleaseImageView_BannerImage"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right">
+
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/BluetoothErrorMessagePage_V7TitleView_Mode2_MiddleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="15px"
+            android:text="@string/StartScan_Text_Mode2_MiddleText_Error1"
+            android:textColor="@color/color_9B9B9B"
+            android:textSize="35px" />
+
+        <LinearLayout
+            android:id="@+id/BluetoothErrorMessagePage_LinearLayout_Mode2_TextViewContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/BluetoothErrorMessagePage_BottomButton"
+            android:layout_below="@+id/BluetoothErrorMessagePage_V7TitleView_Mode2_MiddleTitle"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/BluetoothErrorMessagePage_TextView_Item"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:background="@drawable/gray_frame_dark_gray_content"
+                android:gravity="center"
+                android:textColor="@color/color_676767"
+                android:textSize="26px" />
+
+            <TextView
+                android:id="@+id/BluetoothErrorMessagePage_TextView_Error"
+                android:layout_width="match_parent"
+                android:layout_height="100px"
+                android:gravity="center"
+                android:textColor="@color/color_676767"
+                android:textSize="26px" />
+
+        </LinearLayout>
+
+        <com.v7idea.healthkit.View.BottomButton
+            android:id="@+id/BluetoothErrorMessagePage_BottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="@dimen/activity_padding_left"
+            android:layout_marginRight="@dimen/activity_padding_left" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

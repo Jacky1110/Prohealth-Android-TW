@@ -1,0 +1,381 @@
+<resources>
+    <string name="app_name">健康快篩</string>
+    <string name="determine">確定</string>
+
+    <string name="if_logout">請問您是否要登出？</string>
+    <string name="YES">確定</string>
+    <string name="NO">取消</string>
+    <string name="Complete">完成</string>
+
+
+    <string name="unknown_device">Unknown device</string>
+
+    <string name="facebook_app_id">715327738623878</string>
+    <string name="fb_login_protocol_scheme">fb715327738623878</string>
+
+    <string name="PLEASE_OPEN_AIR_PLANE_MODE">確保量測的正確性，請先開啟飛航模式後再開啟藍牙</string>
+
+    <string name="phone_number_empty">手機號碼不能空白</string>
+    <string name="password_empty">密碼未輸入 !!</string>
+    <string name="no_internet_can_not_login">您尚未開啟網路，故無法登入</string>
+    <string name="no_internet_can_not_register">您尚未開啟網路，故無法註冊</string>
+    <string name="no_internet_can_not_checkcode">您尚未開啟網路，故無法驗證証</string>
+    <string name="no_internet_can_not_use">您尚未開啟網路!!</string>
+    <string name="no_internet_error500">網路不穩定請稍後再試</string>
+
+    <string name="gcm_Api_key">AIzaSyA9ZQF3DaO2WrXC4OMPngMgEKryUdtjxWQ</string>
+    <string name="gcm_sender_id">316359559659</string>
+    <string name="google_plus_client_id">316359559659-jq1eg527btk3thb401finm3fsei35sf7.apps.googleusercontent.com</string>
+
+    <string name="LoginPage_Background_Name">HealthKit-會員登入</string>
+    <string name="MainActivity_Background_Name">HealthKit-主選單</string>
+    <string name="InputUserDataPage_Background_Name">HealthKit-量測</string>
+
+    <string name="LoginPage_Title_MemberLogin">會員登入</string>
+    <string name="LoginPage_Hint_Account">請輸入手機號碼</string>
+    <string name="LoginPage_Hint_Password">請輸入密碼</string>
+
+    <string name="LoginPage_Text_Login">登入</string>
+    <string name="LoginPage_Text_Register">註冊</string>
+
+    <string name="InputUserDataPage_Text_title">請填寫您的基本資料，為了量測的正確性，請確實填寫</string>
+    <string name="InputUserDataPage_Text_BirthDay">生日:</string>
+    <string name="InputUserDataPage_Text_Gender">姓別:</string>
+    <string name="InputUserDataPage_Text_Blood">血型:</string>
+    <string name="InputUserDataPage_Text_Mode">量測類型:</string>
+    <string name="InputUserDataPage_Text_Send">完成並送出</string>
+    <string name="InputUserDataPage_Text_Modify">修改個人資料</string>
+
+    <string name="ScanDevicePage_Text_Mode1_Title">開啟量測設備，並準備連結</string>
+    <string name="ScanDevicePage_Text_Mode1_MiddleTitle">為確保量測的正確性，請依照下列程序操作。</string>
+    <string name="ScanDevicePage_Text_Mode1_Item1">按下NIR+上方電源開關，啟動NIR+。</string>
+    <string name="ScanDevicePage_Text_Mode1_Item2">請將行動裝置開啟為飛航模式。</string>
+    <string name="ScanDevicePage_Text_Mode1_Item3">同時關閉行動裝置的WIFI，避免干擾量\n測。</string>
+    <string name="ScanDevicePage_Text_Mode1_Item4">重新開啟行動裝置的藍牙。</string>
+    <string name="ScanDevicePage_Text_Mode1_Item5">離開行動裝置的『設定』，並回到健康快\n篩APP。</string>
+    <string name="ScanDevicePage_Text_Mode1_BottomBotton">下一步</string>
+
+
+    <string name="ScanDevicePage_Text_Mode2_Title">已偵測到之NIR+型號</string>
+    <string name="ScanDevicePage_Text_Mode2_MiddleTitle">請先點選欲進行量測之NIR＋以配對，再按下『連結並開始量測』按鈕。</string>
+    <string name="ScanDevicePage_Text_Mode2_Item1">於健康快篩APP勾選要使用的NIR+以配\n對。</string>
+    <string name="ScanDevicePage_Text_Mode2_Item2">點擊「連結並開始」。</string>
+    <string name="ScanDevicePage_Text_Mode2_BottomBotton">連結並開始量測</string>
+
+
+    <string name="ScanDevicePage_Text_Mode3_Title">已偵測到之NIR+型號</string>
+    <string name="ScanDevicePage_Text_Mode3_ListView">目前沒有偵測到任何裝置</string>
+    <string name="ScanDevicePage_Text_Mode3_MiddleTitle">請先點選欲進行量測之NIR＋以配對，再按下『連結並開始量測』按鈕。</string>
+    <string name="ScanDevicePage_Text_Mode3_Item1">請將行動裝置開啟為飛航模式。</string>
+    <string name="ScanDevicePage_Text_Mode3_Item2">同時關閉行動裝置的WIFI，避免干擾量\n測。</string>
+    <string name="ScanDevicePage_Text_Mode3_Item3">重新開啟行動裝置的藍牙。</string>
+    <string name="ScanDevicePage_Text_Mode3_Item4">離開行動裝置的『設定』，並回到健康快\n篩 APP。</string>
+    <string name="ScanDevicePage_Text_Mode3_BottomItem">1. 若依照上述程序，仍無法連結裝置及進行量測，請退出【健康快篩】APP，\n並將手機重新關、開機。\n2. 重新啟動【健康快篩】APP\n3. 再依照步驟1-步驟3之程序操作。</string>
+    <string name="ScanDevicePage_Text_Mode3_BottomBotton">重新操作</string>
+
+
+    <string name="BLE_NOT_SUPPORT">您的裝置不支援藍牙BLE!!</string>
+    <string name="BLE_NOT_ENABLE">您的藍牙尚未開啟!!</string>
+    <string name="BLE_IS_ENABLE">您的藍牙已開啟，開始掃瞄裝置</string>
+    <string name="BLE_DEVICE_ADDRESS_IS_EMPTY">請先勾選設備，再按下連結並開始量測！！</string>
+
+    <string name="ConnectedPage_Text_MiddleTitle">避免干擾量測結果提醒</string>
+    <string name="ConnectedPage_Text_Alert">1. 若有配戴寶石類項鍊、電子手錶，請卸除。\n\u0009\u0009 （耳環、 眼鏡除外）。\n2. 若有配戴手套，請脫掉手套。\n3. 雙手雙腳請平放、勿交叉。\n4. 受量測者請移除身上其他具有通訊功能之電\n\u0009\u0009 子設備（如手機）。\n5. 受量測者與其他人請保持至少50cm的距離。</string>
+    <string name="ConnectedPage_Text_Alert2">6. 請按下【開始量測】按鍵，並將四指完全平貼\n\u0009\u0009 於NIR+內側，食指及無名指按壓於NIR+內側\n\u0009\u0009 上下鈕，當按壓正確，NIR+的燈號顯示為綠燈\n\u0009\u0009 恆亮，請保持手勢不動，開始進行量測。\n7. 若按壓不正確或環境光源太亮、NIR+顯示操作\n\u0009\u0009 失誤，紅色LED則會顯示恆亮，請避開光源，\n\u0009\u0009 並重新按『步驟6』重新操作。</string>
+    <string name="ConnectedPage_Text_startDetection">開始量測</string>
+    <string name="StartScan_Text_Mode1_MiddleText">已經進行量測中... \n請勿鬆手，按壓約一分鐘， \n當數字顯示100%，才能鬆手。</string>
+    <string name="StartScan_Text_Mode2_MiddleText_Error1">系統偵測到您未確實按壓NIR+內側上下量測按鈕，請重新確認您的食指及無名指完全按壓於NIR+內側上下鈕後，並按下【重新開始】鍵以進行量測。</string>
+    <string name="StartScan_Text_Mode2_MiddleText_Error2">系統偵測到您測量的環境光源太亮，請儘可能調暗光源，或移至較暗的環境後，同樣將食指及無名指完全按壓於NIR+內側上下鈕後，並按下【重新開始】鍵以進行量測。</string>
+    <string name="StartScan_Text_Mode2_Item_Error1">食指未正確按壓，請重新按壓於NIR+內側上鈕位置</string>
+    <string name="StartScan_Text_Mode2_Item_Error2">無名指未正確按壓，請重新按壓於NIR+內側下鈕位置</string>
+    <string name="StartScan_Text_Mode2_Item_Error3">食指及無名指皆未正確按壓，請重新按壓於正確位置</string>
+    <string name="StartScan_Text_Mode2_Item_Error4">測量環境光源太亮，NIR+無法正確感應。</string>
+
+    <string name="StartScan_Text_reStart">重新開始</string>
+    <string name="StartScan_Text_cancelDetection">取消量測</string>
+
+    <string name="EndScan_Text_MiddleText1">1. 量測完成。 \n2. 您可以鬆手了，請將手指移出NIR+。 \n3. 按下【上傳】以上傳量測資料！ </string>
+    <string name="EndScan_Text_MiddleText2">APP已經將數據上傳到分析主機，請稍待數分鐘，系統將會推播通知並提供健康報吿。</string>
+    <string name="EndScan_Text_Remind_Title">提醒：</string>
+    <string name="EndScan_Text_Remind_Data">若量測前有卸除個人所配戴的寶石類項錬、電子手錶、手套…等物品，量測完畢後請記得重新配戴，避免遺忘丟失。</string>
+
+    <string name="InspectionReportPage_Text_Title">健康報告</string>
+    <string name="InspectionReportPage_Text_ReportPanel_Determine">確認</string>
+    <string name="InspectionReportPage_Text_ReportPanel_BackPage">確認</string>
+    <string name="InspectionReportPage_Text_Button_More">了解更多</string>
+    <string name="InspectionReportPage_Text_AlertPanel_MiddleText">您的最新一筆健康報告量測紀錄仍在分析\n中，請稍候！</string>
+    <string name="InspectionReportPage_Text_AlertPanel_MiddleText2">您的最新一筆立即改善量測紀錄仍在分析\n中，請稍候！</string>
+
+    <string name="HealthRecommendationPage_Text_Title">立即改善</string>
+    <string name="SystemSettingsPage_Text_Title">系統設定</string>
+    <string name="BindingCommunityPage_Text_title">綁定社群</string>
+    <string name="UserBasicInformation_Text_Title">用戶基本設定</string>
+    <string name="UserBasicInformation_Init_Text_Title">用戶基本設定</string>
+    <string name="UserBasicInformation_Text_Update_Success">上傳成功</string>
+    <string name="UserHealthInformation_Text_Title">用戶健康資料</string>
+    <string name="ReminderSettingsPage_Text_Title">提醒設定</string>
+    <string name="EditPasswordPage_Text_Title">修改密碼</string>
+    <string name="EditPasswordPageForForgotPasswodr_Text_Title">重設密碼</string>
+    <string name="CheckCodePage_Text_Title">帳號驗證</string>
+    <string name="CreateAccountQRcode_Text_Title">帳號條碼</string>
+
+    <string name="Use_For_Save">儲存</string>
+    <string name="leave">離開</string>
+
+    <string name="TermsOfServicePage_Text_Agree">同意</string>
+    <string name="TermsOfServicePage_Text_Disagree">不同意</string>
+
+    <string name="RegisterPage_Text_title">請填寫您的基本資料，為了順利啟用帳號，請確實填寫。</string>
+    <string name="RegisterPage_Text_title2">請填寫您的基本資料，為了量測的正確性，請確實填寫。</string>
+    <string name="RegisterPage_Text_PhoneNumber">手機號碼</string>
+    <string name="RegisterPage_Hint_PhoneNumber">請輸入您的手機號碼</string>
+    <string name="RegisterPage_Text_Password">填寫密碼</string>
+    <string name="RegisterPage_Hint_Password">請輸入8位數密碼含英文數字</string>
+    <string name="RegisterPage_Text_ConfirmPassword">確認密碼</string>
+    <string name="RegisterPage_Hint_ConfirmPassword">請再次輸入您的密碼</string>
+    <string name="RegisterPage_Text_LastName">姓氏</string>
+    <string name="RegisterPage_Hint_LastName">請輸入您的姓氏</string>
+    <string name="RegisterPage_Text_FirstName">暱稱</string>
+    <string name="RegisterPage_Hint_FirstName">請輸入您的暱稱</string>
+    <string name="RegisterPage_Text_Email">電子郵件</string>
+    <string name="RegisterPage_Hint_Email">請輸入您的電子郵件(可選填)</string>
+    <string name="RegisterPage2_Text_Birthday">生日</string>
+    <string name="RegisterPage2_Hint_Birthday">1900/01/01</string>
+    <string name="RegisterPage2_Text_Height">身高</string>
+    <string name="RegisterPage2_Hint_Height">公分</string>
+    <string name="RegisterPage2_Text_Weight">體重</string>
+    <string name="RegisterPage2_Hint_Weight">公斤</string>
+    <string name="RegisterPage2_Text_Gender">性別</string>
+    <string name="RegisterPage2_Text_BloodType">血型</string>
+    <string name="UserHealthInformation_Text_Family">家族</string>
+    <string name="UserHealthInformation_Text_Smoke">抽菸</string>
+    <string name="UserHealthInformation_Text_Drink">飲酒</string>
+
+    <string name="RegisterPage_Text_Send">下一步</string>
+    <string name="RegisterPage_Text_Cancel">取消</string>
+
+    <string name="EditPasswordPage_Current_Password">目前密碼</string>
+    <string name="EditPasswordPage_New_Password">新密碼</string>
+    <string name="EditPasswordPage_Confirm_Password">確認密碼</string>
+
+    <string name="EditPasswordPage_Text_SendSave">確認儲存</string>
+    <string name="EditPasswordPage_Text_Back">回上頁</string>
+    <string name="EditPasswordPage_Text_Cancel">取消</string>
+
+    <string name="EditPasswordPage_Hint_Old_Password">請輸入舊密碼</string>
+    <string name="EditPasswordPage_Hint_New_Password">請輸入8位數密碼含英文數字</string>
+    <string name="EditPasswordPage_Hint_Confirm_Password">請再次輸入新密碼</string>
+
+    <string name="BindingCommunityPage_WeChat_text">Wechat</string>
+    <string name="BindingCommunityPage_Line_text">Line</string>
+
+    <string name="REGISTER_ERROR_ACCOUNT_EMPTY">手機欄位不能空白</string>
+    <string name="REGISTER_ERROR_ACCOUNT_LENGTH_MORE_THAN_15">手機號碼長度超過15碼</string>
+    <string name="REGISTER_ERROR_ACCOUNT_IS_NOT_PHONE">手機號碼除了國碼外只能有數字</string>
+
+    <string name="REGISTER_ERROR_LAST_NAME_EMPTY">名字欄位不能空白</string>
+    <string name="REGISTER_ERROR_FIRST_NAME_EMPTY">暱稱欄位不能空白</string>
+    <string name="REGISTER_ERROR_EMAIL_EMPTY">E-mail欄位不能空白</string>
+    <string name="REGISTER_ERROR_EMAIL_FORMAT">E-mail格式錯誤</string>
+    <string name="REGISTER_ERROR_PASSWORD_EMPTY">密碼不能空白</string>
+    <string name="REGISTER_ERROR_PASSWORD_LENGTH_MORE_THAN_8">密碼最小長度需8位數</string>
+    <string name="REGISTER_ERROR_PASSWORD_HAVE_NUM">密碼必須是英文及數字，並且同時包含一個英文和一個數字</string>
+    <string name="REGISTER_ERROR_CONFIRM_PASSWORD_EMPTY">再次輸入密碼不能空白</string>
+    <string name="REGISTER_ERROR_PASSWORD_NOT_THESAME">密碼與再次輸入密碼不符</string>
+
+    <string name="REGISTER2_ERROR_BIRTHDAY_EMPTY">生日欄位不能空白</string>
+    <string name="REGISTER2_ERROR_HEIGHT_EMPTY">身高欄位不能空白</string>
+    <string name="REGISTER2_ERROR_WEIGHT_EMPTY">體重欄位不能空白</string>
+    <string name="REGISTER2_ERROR_GENDER_EMPTY">請勾選性別</string>
+    <string name="REGISTER2_ERROR_BLOODTYPE_EMPTY">請勾選血型</string>
+    <string name="REGISTER2_ERROR_BIRTHDAY_IS_NOT_CORRECT">生日日期格式有誤</string>
+    <string name="REGISTER2_ERROR_BIRTHDAY_MONTH_IS_NOT_CORRECT">月份有誤</string>
+    <string name="REGISTER2_ERROR_BIRTHDAY_DAY_IS_NOT_CORRECT">日期有誤</string>
+    <string name="REGISTER2_ERROR_HEIGHT_IS_NOT_CORRECT">身高格式有誤</string>
+    <string name="REGISTER2_ERROR_WEIGHT_IS_NOT_CORRECT">體重格式有誤</string>
+
+    <string name="gps_network_not_enabled">請開啟定位功能，確保藍牙可以掃瞄到裝置！！</string>
+
+    <!--<string name="REGISTER_Check_Word_Switch_Empty">不能空白</string>-->
+    <!--<string name="REGISTER_Check_Word_Switch_Default_MinNum">輸入長度不得低於</string>-->
+    <!--<string name="REGISTER_Check_Word_Switch_Default_MaxNum">輸入長度不得高於於</string>-->
+    <!--<string name="REGISTER_Check_Word_Switch_Default_EndText">位數</string>-->
+    <!--<string name="REGISTER_Check_English_Num">輸入必須是英文及數字，並且同時包含一個英文和一個數字</string>-->
+    <!--<string name="REGISTER_Check_Num">輸入必須是數字</string>-->
+
+    <string name="CheckCodePage_Text_Data">系統已透過訊息文字將驗證碼傳送至您輸\n入的電話號碼，請於下方輸入您收到的驗\n證碼。</string>
+    <string name="CheckCodePage_Text_CheckCode">驗證碼</string>
+    <string name="CheckCodePage_Hint_CheckCode">輸入驗證碼</string>
+
+    <string name="CheckCodePage_Text_Send">確認</string>
+    <string name="CheckCodePage_Text_Cancel">取消</string>
+
+    <string name="CheckCodePage_Text_ReSendCode">於60秒內未收到驗證碼，請重新傳送。</string>
+    <string name="CheckCodePage_Text_ReSendCode1">於</string>
+    <string name="CheckCodePage_Text_ReSendCode2">秒內未收到驗證碼，請重新傳送。</string>
+
+    <string name="CheckCodePage_Text_ReSendChaeckCode">請再次確認是否重新寄送驗證碼?</string>
+    <string name="CheckCodePage_Text_ReSendChaeckCode_YES">是</string>
+    <string name="CheckCodePage_Text_ReSendChaeckCode_NO">否</string>
+    <string name="CheckCodePage_Text_ReSendChaeckCode_SENDEND">已成功送出驗證碼!</string>
+    <string name="CheckCodePage_ERROR_CHECK_CDOE_IS_EMPTY">請填寫您手機收到的驗證碼!!</string>;
+
+    <string name="RegisterCompletePage_Text_title">您的帳號已驗證成功！\n歡迎您加入幸福健康的行列！</string>
+    <string name="RegisterCompletePage_Text_Description">量測說明</string>
+    <string name="RegisterCompletePage_Text_Start">開始進行量測</string>
+    <string name="RegisterCompletePage_Text_BackMain">確認</string>
+
+    <string-array name="Gender_Array">
+        <item>女</item>
+        <item>男</item>
+    </string-array>
+
+    <string-array name="Blood_Array">
+        <item>O型</item>
+        <item>A型</item>
+        <item>B型</item>
+        <item>AB型</item>
+    </string-array>
+
+    <string-array name="Mode_Array">
+        <item>智能型量測</item>
+        <item>豪華型量測</item>
+    </string-array>
+
+    <string name="UserBasicInformation_Text_Page2_Title">現有資訊</string>
+    <string name="UserBasicInformation_EditPhoto">編輯相片</string>
+    <string name="UserBasicInformation_Text_LastName">姓氏</string>
+    <string name="UserBasicInformation_Hint_LastName">請輸入您的姓氏</string>
+    <string name="UserBasicInformation_Text_FirstName">暱稱</string>
+    <string name="UserBasicInformation_Hint_FirstName">請輸入您的暱稱</string>
+    <string name="UserBasicInformation_Text_Email">電子郵件</string>
+
+    <string name="UserBasicInformation_Hint_Email">請輸入您的電子郵件(可選填)</string>
+    <string name="UserBasicInformation_Text_Height">身高(公分)</string>
+    <string name="UserBasicInformation_Text_Birthday">出生年月</string>
+    <string name="UserBasicInformation_Hint_Height">請輸入您的身高</string>
+    <string name="UserBasicInformation_Text_Weight">體重(公斤)</string>
+    <string name="UserBasicInformation_Hint_Weight">請輸入您的體重</string>
+    <string name="UserBasicInformation_Text_Gender">性別</string>
+    <string name="UserBasicInformation_Text_BloodType">血型</string>
+    <string name="UserBasicInformation_Text_Mobile">手機</string>
+
+    <string name="UserBasicInformation_Init_Gender_Male">男</string>
+    <string name="UserBasicInformation_Init_Gender_Female">女</string>
+
+    <string name="UserBasicInformation_Init_Blood_A">A</string>
+    <string name="UserBasicInformation_Init_Blood_B">B</string>
+    <string name="UserBasicInformation_Init_Blood_O">O</string>
+    <string name="UserBasicInformation_Init_Blood_AB">AB</string>
+
+    <string name="UserBasicInformation_Text_Back">回上頁</string>
+    <string name="UserBasicInformation_Text_Next">下一步</string>
+    <string name="UserBasicInformation_Init_Text_Save">確認完成</string>
+    <string name="UserBasicInformation_Text_Save">確認儲存</string>
+
+    <string name="UserBasicInformation_Hint_Birthday_Year">西元年</string>
+    <string name="UserBasicInformation_Hint_Birthday_Ｍonth">月</string>
+
+    <string name="UserBasicInformation_ERROR_FIRST_NAME_EMPTY">名字欄位不能空白</string>
+    <string name="UserBasicInformation_ERROR_LAST_NAME_EMPTY">暱稱欄位不能空白</string>
+    <string name="UserBasicInformation_ERROR_BIRTHDAY_YEAR_EMPTY">生日欄位(西元年)不能空白</string>
+    <string name="UserBasicInformation_ERROR_BIRTHDAY_ＭONTH_EMPTY">生日欄位(月)不能空白</string>
+    <string name="UserBasicInformation_ERROR_GENDER_EMPTY">請勾選性別</string>
+    <string name="UserBasicInformation_ERROR_BLOODTYPE_EMPTY">請勾選血型</string>
+    <string name="UserBasicInformation_ERROR_HEIGHT_EMPTY">身高欄位不能空白</string>
+    <string name="UserBasicInformation_ERROR_WEIGHT_EMPTY">體重欄位不能空白</string>
+    <string name="UserBasicInformation_ERROR_BIRTHDAY_IS_NOT_CORRECT">生日日期格式有誤</string>
+    <string name="UserBasicInformation_ERROR_HEIGHT_NUM">身高欄位必須是整數</string>
+    <string name="UserBasicInformation_ERROR_HEIGHT_NUM_0">身高欄位不能為0</string>
+    <string name="UserBasicInformation_ERROR_WEIGHT_NUM">體重欄位必須是整數</string>
+    <string name="UserBasicInformation_ERROR_WEIGHT_NUM_0">體重欄位不能為0</string>
+    <string name="UserBasicInformation_ERROR_EMAIL_EMPTY">E-mail欄位不能空白</string>
+    <string name="UserBasicInformation_ERROR_EMAIL_FORMAT">E-mail格式錯誤</string>
+
+
+    <string name="CheckWeightPage_Text_Question1_Label">1.</string>
+    <string name="CheckWeightPage_Text_Question1_Title">為確保您個人健康資料的正確性，請重新填寫目前體重。</string>
+    <string name="CheckWeightPage_Text_Weight">體重(公斤)</string>
+    <string name="CheckWeightPage_Hint_Weight">請輸入目前體重</string>
+    <string name="CheckWeightPage_Text_Question2_Label">2.</string>
+    <string name="CheckWeightPage_Text_Question2_Title">日常生活習慣是否有確實按照建議調整?</string>
+
+    <string name="CheckWeightPage_Text_Question3_Label">3.</string>
+    <string name="CheckWeightPage_Text_Question3_Title">飲食習慣是否有確實按照建議調整?</string>
+
+    <string name="CheckWeightPage_Text_Answer1">沒有</string>
+    <string name="CheckWeightPage_Text_Answer2">偶爾</string>
+    <string name="CheckWeightPage_Text_Answer3">有做到</string>
+
+    <string name="CheckWeightPage_Text_EndAndSend">完成並送出</string>
+
+
+    <string name="ForgotPasswordPage_Text_Title">忘記密碼</string>
+    <string name="ForgotPasswordPage_Hint_Account">請輸入手機號碼</string>
+
+    <string name="ForgotPasswordPage_Text_Send">下一步</string>
+    <string name="ForgotPasswordPage_Text_Cancel">取消</string>
+
+    <string name="CheckCodePageForPassword_Text_Title">忘記密碼</string>
+    <string name="CheckCodePageForPassword_Text_Data">系統已透過訊息文字將驗證碼傳送至您輸\n入的電話號碼，請於下方輸入您收到的驗\n證碼。</string>
+    <string name="CheckCodePageForPassword_Text_CheckCode">驗證碼</string>
+    <string name="CheckCodePageForPassword_Hint_CheckCode">輸入驗證碼</string>
+
+    <string name="CheckCodePageForPassword_Text_Send">下一步</string>
+    <string name="CheckCodePageForPassword_Text_Cancel">取消</string>
+
+    <string name="CheckCodePageForPassword_Text_ReSendCode">於60秒內未收到驗證碼，請重新傳送。</string>
+    <string name="CheckCodePageForPassword_Text_ReSendCode1">於</string>
+    <string name="CheckCodePageForPassword_Text_ReSendCode2">秒內未收到驗證碼，請重新傳送。</string>
+
+    <string name="CheckCodePageForPassword_Text_ReSendChaeckCode">請再次確認是否重新寄送驗證碼?</string>
+    <string name="CheckCodePageForPassword_Text_ReSendChaeckCode_YES">是</string>
+    <string name="CheckCodePageForPassword_Text_ReSendChaeckCode_NO">否</string>
+    <string name="CheckCodePageForPassword_Text_ReSendChaeckCode_SENDEND">已成功送出驗證碼!</string>
+    <string name="CheckCodePageForPassword_ERROR_CHECK_CDOE_IS_EMPTY">請填寫您手機收到的驗證碼!!</string>
+
+    <string name="LightDescriptionPage_Text_Title">NIR+量測設備燈號說明</string>
+    <string name="LightDescriptionPage_Text_Button">下一步</string>
+
+    <string name="LightDescriptionPage_Text_Item1">NIR+電源開關鈕</string>
+    <string name="LightDescriptionPage_Text_Item2">啟動NIR+後，藍色LED顯示閃爍。</string>
+    <string name="LightDescriptionPage_Text_Item3">藍牙成功連結NIR+後，藍色LED顯示恆亮。</string>
+    <string name="LightDescriptionPage_Text_Item4">NIR+量測中，綠色LED顯示恆亮。</string>
+    <string name="LightDescriptionPage_Text_Item5">量測完成，藍色LED顯示閃爍。</string>
+    <string name="LightDescriptionPage_Text_Item6">NIR+操作失誤，紅色LED顯示恆亮。</string>
+
+    <string name="FeedbackPage_Text_Title">我要反饋</string>
+    <string name="FeedbackPage_Text_MiddleTitle">我們非常重視您回饋的意見，請留下您欲反\n饋的內容及建議，謝謝。（長度限制500\n字）</string>
+    <string name="FeedbackPage_Text_Cancel">取消</string>
+    <string name="FeedbackPage_Text_Send">確認送出</string>
+
+    <string name="FeedbackPage_ERROR_DATA_TYPE_EMPTY">請選擇類別</string>
+    <string name="FeedbackPage_ERROR_DATA_EMPTY">請輸入您的意見</string>
+    <string name="FeedbackPage_ERROR_DATA_FORMAT">內容含標點符號長度限制500字</string>
+
+    <string name="SystemSettingsPage_Text_BackPage">回上頁</string>
+
+    <string name="CheckConnectedPage_Text_Alert">請於10秒內，\n\n請將手掌虎口緊貼儀器邊緣，\n\n四指伸入NIR+內，\n\n讓指腹完全平貼NIR+內側，\n\n同時將食指及無名指指腹，按壓NIR內側上下鈕。</string>
+
+
+    <string name="ReminderSettings_Text_SendSave">確認儲存</string>
+    <string name="ReminderSettings_Text_Cancel">回上頁</string>
+
+    <string name="TermsOfServicePage_Text_CheckBox">我同意上述之隱私權保護政策條款。</string>
+    <string name="TermsOfServicePage_Text_Error">您需同意隱私權保護政策條款\n才能進行下一步</string>
+
+    <string name="default_notification_channel_name" translatable="true">NirPlus</string>
+    <string name="default_notification_channel_id" translatable="false">nirplus_fcm_default_channel</string>
+
+    <string name="next_time_not_show">下次不要再顯示說明頁</string>
+    <string name="HEALTHDESCRIPTIONPAGE2_TEXT_NEXT_TIME_NOT_SHOW_HINT">如欲再次瀏覽說明頁，請點選【系統設定】中的【立即改善説明】</string>
+    <string name="PREPARECONNECTPAGE2_TEXT_NEXT_TIME_NOT_SHOW_HINT">如欲再次瀏覽說明頁，請點選【系統設定】中的【NIR+配對操作說明】</string>
+    <string name="REPORTDESCRIPTIONPAGE2_TEXT_NEXT_TIME_NOT_SHOW_HINT">如欲再次瀏覽說明頁，請點選【系統設定】中的【健康報告說明】</string>
+
+    <string name="cancel_CAMERA_permission">由於您停用此權限，使無法取用相機，請從相簿中選擇。</string>
+    <string name="cancel_WRITE_EXTERNAL_STORAGE_permission">由於您停用此權限，故無法取得正確取您剛才拍攝的相片，請從相簿中選擇。</string>
+    <string name="this_device_can_not_get_picture">此裝置無法取得相片，請從相簿中選擇。</string>
+
+    <string name="please_close_wifi">請關閉行動裝置的WIFI，避免干擾量測。</string>
+    <string name="please_open_bluetooth">請重新開啟行動裝置的藍牙。</string>
+</resources>

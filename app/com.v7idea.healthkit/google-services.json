@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "316359559659",
+    "project_id": "gentle-dominion-151303"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316359559659:android:5a9ac54d991c2b3c",
+        "android_client_info": {
+          "package_name": "com.v7idea.healthkit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316359559659-shodmd6ata76722h9919elgsjai2f1ud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.v7idea.healthkit",
+            "certificate_hash": "a7547486aebbb8dbbb9d2d6abfaeb2e030e6b5d2"
+          }
+        },
+        {
+          "client_id": "316359559659-jq1eg527btk3thb401finm3fsei35sf7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9ZQF3DaO2WrXC4OMPngMgEKryUdtjxWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

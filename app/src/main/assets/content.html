@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, user-scalable=no" />
+<title>WebView Internal Content</title>
+<script type="text/javascript" src="file:///android_asset/jquery-1.10.2.js" ></script>
+<script type="text/javascript" src="file:///android_asset/jquery-ui.js" ></script>
+<script type="text/javascript" src="file:///android_asset/content.js" ></script>
+<style>
+
+/* body { font-size:100%; color:#ffffff; line-height: 24pt; text-justify:inter-ideograph; margin:0px; padding:0px; }
+.documentDetail { width: 96%; margin: 20px auto 20px auto;}
+
+#contentArea img { width:90%; border:5px #fff solid; -moz-box-shadow:0px 0px 3px #333;-webkit-box-shadow:0px 0px 3px #333; box-shadow:0px 0px 3px #333; position:relative; margin: 2% auto 2% auto;} */
+.clear { clear:both;}
+
+#contentArea {
+	line-height:180%;
+}
+
+.infoBar { position:relative; min-height:6%; color:#333333; background-color:#eeeeee; -moz-border-radius:10px /*{global-radii-blocks}*/; -webkit-border-radius: 10px/*{global-radii-blocks}*/; border-radius:10px /*{global-radii-blocks}*/; width:100%; margin-bottom:2%; padding-top:2%;}		
+.infoBar:active { background-color:#dddddd;  }
+.infoBar .icon { position:relative; float:left; margin-left:10px; width:10%;  }
+.infoBar .icon img { width:80%; float:left; border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;}
+.infoBar .title { width:25%; position:relative; color:#333333; text-align:right; margin-left: 1%; float:left; line-height:200%;}	
+.infoBar .content { position:relative; color:#3b608f; margin-left: 1%; float:left; line-height:200%;}		
+
+.fileItem { margin: 0px 0px 5px 0px; min-height:24px; color:#333333; background-color:#cccccc; -moz-border-radius:5px /*{global-radii-blocks}*/; -webkit-border-radius: 10px/*{global-radii-blocks}*/; border-radius:5px /*{global-radii-blocks}*/; width:100%; padding:10px 0px 8px 0px;}	
+.fileItem .icon { float:left; margin-left:5px;  width:40px; margin-right:5px; }
+.fileItem .icon img { width:40px; margin-top:2px; margin-left:4px; float:left; border:none;-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none; border:0px;}
+.fileItem .title { width:80%; color:#222222; text-align:left; margin-left: 5px; float:left;  line-height:24px; font-size:20px; margin-top:7px;}	
+.fileItem:active { background-color:#333; color:#fff;  }
+
+body { font-size:100%; color:#476F6B; line-height: 150%; text-justify:inter-ideograph; margin:0px; padding:0px; background-color:#ffffff; }
+        
+		.documentDetail { width: 96%; margin: 20px auto 20px auto;}
+
+        #contentArea img { width:90%; border:5px #fff solid; -moz-box-shadow:0px 0px 3px #333;-webkit-box-shadow:0px 0px 3px #333; box-shadow:0px 0px 3px #333; position:relative; margin: 2% auto 2% auto;}
+        .clear { clear:both;}
+
+		#contentArea {
+			margin:10px 10px 50px 10px;	
+			text-align:justify;
+			text-justify:inter-word;
+		}
+
+		.fontSelectArea {			
+			margin:1%;
+			/*background-color:rgba(0,0,0,0.5);	*/				
+		}
+		
+		#fontType1, #fontType2, #fontType3 {
+			
+			float:right;
+			width:20px;
+			height:22px;
+			line-height:22px;
+			margin:2px;
+			border: 1px #eee solid;
+			background-color:rgba(0,0,0,0.3);
+			text-align:center;	
+			color:rgba(255, 255, 255, 0.5);
+			padding:4px;	
+			
+		}
+		
+		.fontSize1 {
+			font-size: 95%;
+			line-height:200%;
+		}
+		
+		.fontSize2 {
+			font-size: 120%;
+			line-height:200%;
+		}
+		
+		.fontSize3 {
+			font-size: 145%;
+			line-height:200%;
+		}
+		
+		.session {
+			border-bottom: 1px none #fff;
+			padding-bottom:3px;
+			
+		}
+
+		.session_selected {
+			border-bottom: 1px dotted #fff;
+			padding-bottom:3px;
+			
+		}
+		
+		.session .node, .session_selected .node, .node {
+			
+			color:#FF9999;
+			font-size: 80%;
+			font-style:italic;
+			text-decoration:blink;
+			padding:5px 10px 5px 10px;
+			margin: 0px 10px 0px 5px;
+			border:1px rgba(255,255,255, 0.5) solid;
+			
+		}
+		
+		.session_selected .node {
+			
+		}
+
+
+
+</style>
+</head>
+<body>
+	<div class="documentDetail" id="documentDetail">
+    <div class="fontSelectArea">
+    	<div class="fontSize1 type_selected" id="fontType1" onclick="selectFontType(1);" style="background-color:rgba(255,100,100,0.4);">A</div>
+        <div class="fontSize2" id="fontType2" onclick="selectFontType(2);"  >A</div>
+        <div class="fontSize3" id="fontType3" onclick="selectFontType(3);">A</div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+  		<div id="eventFieldValue">
+            <div class="infoBar" id="fieldTime" onclick="callTimeProcess();" style="display:none;">
+                <div class="icon"><img src="file:///android_asset/icon_date.png" border="0"></div>
+               <div class="title">活動日期：</div>
+               <div class="content"> <span id="valueOfDate"></span>&nbsp;&nbsp;&nbsp;<span id="valueOfTime"></span> </div>
+               <!-- <div class="title">日期：</div> -->
+               <!--<div class="content"  id=""></div> -->
+               <div class="clear"></div>
+            </div>
+            <div class="infoBar" id="fieldPlace" onclick="callGoogleMapProcess();" style="display:none;">
+                <div class="icon"><img src="file:///android_asset/icon_location.png" border="0"></div>
+               <div class="title" >  地點：</div>
+               <div class="content"  id="valueOfPlace"></div>
+               <div class="clear"></div>
+            </div>
+            <div class="infoBar" id="fieldPeople" onclick="callPeopleProcess();" style="display:none;">
+               <div class="icon"><img src="file:///android_asset/icon_people.png" border="0"></div>
+               <div class="title" >  人數：</div>
+               <div class="content"  id="valueOfPeople"></div>
+               <div class="clear"></div>
+            </div>
+            <div class="infoBar" id="fieldHost" onclick="callHostProcess();" style="display:none;">
+               <div class="icon"><img src="file:///android_asset/icon_host.png" border="0"></div>
+               <div class="title" >主辦單位：</div>
+               <div class="content"  id="valueOfHost"></div>
+               <div class="clear"></div>
+            </div>
+            <div class="infoBar" id="fieldCost" onclick="callCostProcess();" style="display:none;">
+               <div class="icon"><img src="file:///android_asset/icon_money.png" border="0"></div>
+               <div class="title" >  費用：</div>
+               <div class="content"  id="valueOfCost"></div>
+               <div class="clear"></div>
+            </div>
+            <div class="infoBar" id="fieldPhone" onclick="callPhoneProcess();" style="display:none;">
+               <div class="icon"><img src="file:///android_asset/icon_tel.png" border="0"></div>
+               <div class="title" >聯絡電話：</div>
+               <div class="content"  id="valueOfPhone"></div>
+               <div class="clear"></div>
+            </div>
+        </div>
+        <div id="contentArea" class="fontSize1">
+        </div>
+        <div id="videoArea">
+        </div>
+        <div id="fileArea">
+            
+        </div>
+    </div>
+</body> 
+<script language="javascript">
+	function selectFontType(thisType) {
+		
+		switch(thisType) {
+		
+			case 1:
+			
+				document.getElementById('fontType1').style.backgroundColor = 'rgba(255,100,100,0.4)';
+				document.getElementById('fontType2').style.backgroundColor = '';
+				document.getElementById('fontType3').style.backgroundColor = '';
+				document.getElementById('contentArea').className = 'fontSize1';
+				break;
+				
+			case 2:
+			
+				document.getElementById('fontType1').style.backgroundColor = '';
+				document.getElementById('fontType2').style.backgroundColor = 'rgba(255,100,100,0.4)';
+				document.getElementById('fontType3').style.backgroundColor = '';
+				document.getElementById('contentArea').className = 'fontSize2';
+				break;
+				
+			case 3:
+			
+				document.getElementById('fontType1').style.backgroundColor = '';
+				document.getElementById('fontType2').style.backgroundColor = '';
+				document.getElementById('fontType3').style.backgroundColor = 'rgba(255,100,100,0.4)';
+				document.getElementById('contentArea').className = 'fontSize3';
+			
+				break;
+			
+			
+		}
+		
+	}
+	
+	function sessionSelect(obj) {
+	
+		var selectedObj = document.getElementsByClassName('session_selected');
+		
+		if (selectedObj != null && selectedObj.length > 0) {
+		
+			var i = 0;
+			
+			for(i = 0; i < selectedObj.length; i ++) {
+			
+				selectedObj[i].className = 'session';
+				
+			}
+			
+		}
+		
+		obj.className = 'session_selected';
+		
+	}
+</script>
+</html>

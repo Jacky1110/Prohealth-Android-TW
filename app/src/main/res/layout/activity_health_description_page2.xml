@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".HealthDescriptionPage2">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/HealthDescriptionPage2_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/HealthDescriptionPage2_LinearLayout_CheckBoxContainer"
+        android:layout_below="@id/HealthDescriptionPage2_Banner_Header"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.v7idea.template.View.AutoReleaseImageView
+            android:id="@+id/HealthDescriptionPage2_AutoReleaseImageView"
+            android:layout_width="702px"
+            android:layout_height="960px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/health_description_page4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/HealthDescriptionPage2_LinearLayout_CheckBoxContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/HealthDescriptionPage2_TextView_CheckBoxHint"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/HealthDescriptionPage2_ImageView_CheckIcon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:scaleType="fitXY"
+            android:src="@drawable/check_box_selector" />
+
+        <TextView
+            android:id="@+id/HealthDescriptionPage2_TextView_MiddleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/next_time_not_show"
+            android:textColor="@color/color_515355"
+            android:textSize="38px" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/HealthDescriptionPage2_TextView_CheckBoxHint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/HealthDescriptionPage2_BottomButton"
+        android:text="@string/HEALTHDESCRIPTIONPAGE2_TEXT_NEXT_TIME_NOT_SHOW_HINT"
+        android:textColor="@color/color_515355"
+        android:textSize="24px" />
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/HealthDescriptionPage2_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="26px"
+        android:layout_marginLeft="28px"
+        android:layout_marginRight="26px" />
+
+</RelativeLayout>

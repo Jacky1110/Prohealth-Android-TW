@@ -1,0 +1,15 @@
+r
+r.idea
+m.idea/caches
+m.idea/codeStyles
+r.idea/libraries
+mapp
+aapp/build/generated/res/google-services/release/values
+aapp/build/generated/source/buildConfig/release/com/v7idea/healthkit
+mapp/src/main
+mapp/src/main/java/com/v7idea/healthkit
+mapp/src/main/java/com/v7idea/healthkit/Model
+mapp/src/main/res/mipmap-hdpi
+mapp/src/main/res/values
+rbuild/android-profile
+abuild/intermediates/dex-cache

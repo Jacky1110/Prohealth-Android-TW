@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.MainActivity">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/MainActivity_SpecialImageView_Header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_Header_height"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_color_header" />
+
+    <LinearLayout
+        android:id="@+id/MainActivity_LinearLayout_contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/MainActivity_SpecialImageView_Header"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:layout_marginTop="30px"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/MainActivity_RelativeLayout_TopBannerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/MainActivity_SpecialImageView_TopBannerBackground"
+                android:layout_width="match_parent"
+                android:layout_height="334px"
+                android:layout_marginBottom="24px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@mipmap/page_main_banner" />
+
+
+        </RelativeLayout>
+
+        <com.v7idea.template.View.SpecialListView
+            android:id="@+id/MainActivity_SpecialListView_FunctionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

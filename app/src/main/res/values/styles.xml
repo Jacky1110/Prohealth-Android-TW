@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="dialog" parent="android:Theme.Holo.Light.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 邊框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮現在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 無標題 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!-- 模糊 -->
+    </style>
+    <style name="SwitchTheme" parent="Theme.AppCompat.Light">
+        <item name="android:colorControlActivated">#009788</item>
+        <!--<item name="android:thumbTint">#FFFFFF</item>-->
+        <item name="android:colorForeground">#120909</item>
+    </style>
+    <style name="RadioButton" parent="android:Theme.Material.Light">
+        <item name="android:colorAccent">@color/color_91D6CF</item>
+    </style>
+</resources>

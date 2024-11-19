@@ -1,0 +1,109 @@
+apply plugin: 'com.android.application'
+
+android {
+//    signingConfigs {
+//        config {
+//            keyAlias 'NilPlus'
+//            keyPassword '80536188'
+//            storeFile file('C:/Users/emilyhuang/AppData/Local/Android/Key/nilplus_android_key_store.jks')
+//            storePassword '80536188'
+//        }
+//    }
+    compileSdkVersion 31
+    buildToolsVersion '30.0.3'
+    defaultConfig {
+        applicationId "com.prohealth.nirplus"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionName "1.01.128"
+      //  versionName "1.01.124"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        versionCode 78
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            signingConfig signingConfigs.config
+//            /Users/liangboyao/Documents/android-ndk-r14b
+            debuggable false
+            jniDebuggable false
+            android.applicationVariants.all {
+                variant ->
+                    variant.outputs.all {
+                        String Name = "NilPlus";
+                        outputFileName = "${Name}(${variant.versionName})${new Date().format("yyyy-MM-dd", TimeZone.getTimeZone("Asia/Taipe"))}.apk"
+                    }
+            }
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'org/apache/http/version.properties'
+        exclude 'org/apache/http/client/version.properties'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation 'com.google.firebase:firebase-core:16.0.4'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+    implementation files('libs/V7RCLiteSDK.jar')
+    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
+    implementation 'com.google.android.gms:play-services-auth:20.4.1'
+    // google plus login Dependency for Google Sign-In
+    implementation 'com.google.api-client:google-api-client:1.22.0'
+    // google plus login Dependencies for the REST API example
+    implementation 'com.google.api-client:google-api-client-android:1.22.0'
+    implementation 'com.google.apis:google-api-services-people:v1-rev139-1.22.0'
+    implementation 'joda-time:joda-time:2.3'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile files('libs/commons-codec-1.6.jar')
+//    implementation 'com.android.support:support-v4:25.3.1'
+//    implementation 'com.android.support:appcompat-v7:25.3.1'
+//    implementation 'com.android.support:recyclerview-v7:25.3.1'
+//    implementation files('libs/commons-codec-1.6.jar') {
+//        exclude group'org.apache.commons.codec.BinaryDecoder'
+//    }
+    implementation files('libs/fluent-hc-4.2.5.jar')
+//    implementation files('libs/httpclient-4.2.5.jar')
+//    implementation files('libs/httpclient-cache-4.2.5.jar')
+//    implementation files('libs/httpcore-4.2.4.jar')
+    implementation files('libs/httpmime-4.2.5.jar')
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+}
+
+//configurations.all {
+//    resolutionStrategy {
+//        force 'com.android.support:design:23.4.0'
+//        force 'com.android.support:support-v4:23.4.0'
+//        force 'com.android.support:appcompat-v7:23.4.0'
+//    }
+//}
+
+apply plugin: 'com.google.gms.google-services'

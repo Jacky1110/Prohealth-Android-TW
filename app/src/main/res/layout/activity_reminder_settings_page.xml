@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.SystemSettingsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.v7idea.template.View.Banner
+            android:id="@+id/ReminderSettings_Banner_Header"
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <ScrollView
+            android:id="@+id/ReminderSettings_LockScrollView_ScrollArea"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="38px"
+            android:paddingLeft="@dimen/activity_padding_left"
+            android:paddingRight="@dimen/activity_padding_right"
+            android:scrollbars="none">
+
+            <com.v7idea.template.View.SpecialListView
+                android:id="@+id/ReminderSettings_SpecialListView_FunctionList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="0px"
+                android:listSelector="@android:color/transparent" />
+        </ScrollView>
+    </LinearLayout>
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/ReminderSettings_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28px"
+        android:paddingLeft="@dimen/activity_padding_left"
+        android:paddingRight="@dimen/activity_padding_right" />
+</RelativeLayout>

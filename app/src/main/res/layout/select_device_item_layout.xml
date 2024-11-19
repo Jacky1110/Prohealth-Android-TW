@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64px">
+
+    <ImageView
+        android:id="@+id/DeviceItem_ImageView_Background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/list_item_select" />
+
+    <ImageView
+        android:id="@+id/DeviceItem_ImageView_DeviceIcon"
+        android:layout_width="59px"
+        android:layout_height="59px"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="26px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_gray_device" />
+
+    <com.v7idea.template.View.V7TitleView
+        android:id="@+id/DeviceItem_V7TitleView_Name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="19px"
+        android:layout_toLeftOf="@+id/DeviceItem_ImageView_Icon"
+        android:layout_toRightOf="@+id/DeviceItem_ImageView_DeviceIcon"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/color_666666"
+        android:textSize="@dimen/TextSize" />
+
+    <ImageView
+        android:id="@+id/DeviceItem_ImageView_Icon"
+        android:layout_width="58px"
+        android:layout_height="58px"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="54px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/icon_selected" />
+
+
+</RelativeLayout>

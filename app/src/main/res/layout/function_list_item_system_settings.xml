@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/SystemSettingPage_RelativeLayout_Container"
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@drawable/list_item_select">
+
+        <RelativeLayout
+            android:id="@+id/SystemSettingPage_RelativeLayout_IconContainer"
+            android:layout_width="75px"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true">
+
+        </RelativeLayout>
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/SystemSettingPage_AutoReleaseImageView_TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/SystemSettingPage_RelativeLayout_IconContainer"
+            android:layout_toLeftOf="@+id/SystemSettingPage_RelativeLayout_AlertIconContainer"
+            android:textSize="36px"
+            android:textColor="@color/color_666666"
+            android:gravity="center_vertical"
+            android:text="XXX"/>
+
+        <RelativeLayout
+            android:id="@+id/SystemSettingPage_RelativeLayout_AlertIconContainer"
+            android:layout_width="150px"
+            android:visibility="gone"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true">
+
+            <ImageView
+                android:id="@+id/SystemSettingPage_AutoReleaseImageView_AlertIcon"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:background="@mipmap/arrow_next"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/SystemSettingPage_AutoReleaseImageView_divider"
+        android:layout_width="match_parent"
+        android:layout_height="20px"/>
+</LinearLayout>

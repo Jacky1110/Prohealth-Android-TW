@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.HealthRecommendationSubMenuPage"
+    android:background="@android:color/white">
+
+    <com.v7idea.template.View.Banner
+        android:id="@+id/HealthRecommendationSubMenuPage_Banner_Header"
+        android:layout_width="match_parent"
+        android:layout_height="100px"/>
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/HealthRecommendationSubMenuPage_AutoReleaseImageView_BannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:layout_below="@+id/HealthRecommendationSubMenuPage_Banner_Header"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/recommend_top_banner"/>
+
+    <ListView
+        android:id="@+id/HealthRecommendationSubMenuPage_ListView_ShowContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/HealthRecommendationSubMenuPage_AutoReleaseImageView_BannerImage"
+        android:layout_marginLeft="27px"
+        android:layout_marginRight="27px"
+        android:layout_centerHorizontal="true"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"/>
+
+</RelativeLayout>

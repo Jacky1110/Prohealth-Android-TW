@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.v7idea.healthkit.RegisterPage2">
+
+    <ScrollView
+        android:id="@+id/RegisterPage2_ScrollView_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:id="@+id/RegisterPage2_LinearLayout_ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/RegisterPage2_AutoReleaseImageView_BannerImage"
+                    android:layout_width="750px"
+                    android:layout_height="412px"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/page_register_banner" />
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/RegisterPage2_AutoReleaseImageView_BackIcon"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/RegisterPage_AutoReleaseImageView_BannerImage"
+                    android:layout_marginLeft="15px"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/page_register_button_back" />
+
+            </RelativeLayout>
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/RegisterPage2_V7TitleView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_padding_left"
+                android:paddingRight="@dimen/activity_padding_right"
+                android:text="@string/RegisterPage_Text_title"
+                android:textColor="@color/color_626262_title"
+                android:textSize="40px" />
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/RegisterPage2_RelativeLayout_Birthday"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="128px"-->
+                <!--android:layout_marginLeft="@dimen/activity_padding_left"-->
+                <!--android:layout_marginRight="@dimen/activity_padding_right"-->
+                <!--android:layout_marginTop="20px"-->
+                <!--android:background="@drawable/gray_frame_white_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/RegisterPage2_TextView_Birthday"-->
+                    <!--android:layout_width="200px"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_marginLeft="20px"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/RegisterPage2_Text_Birthday"-->
+                    <!--android:textColor="@color/color_626262"-->
+                    <!--android:textSize="40px" />-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/RegisterPage2_EditText_Birthday"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_alignParentTop="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_toRightOf="@+id/RegisterPage2_TextView_Birthday"-->
+                    <!--android:background="@null"-->
+                    <!--android:hint="@string/RegisterPage2_Hint_Birthday"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:textSize="40px" />-->
+            <!--</RelativeLayout>-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/RegisterPage2_LinearLayout_BirthDayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:gravity="center_vertical"
+                android:background="@drawable/gray_frame_white_content">
+
+                <TextView
+                    android:id="@+id/RegisterPage2_TextView_Birthday"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/RegisterPage2_Text_Birthday"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/RegisterPage2_V7TitleView_BirthYear"
+                    android:background="@null"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize"
+                    android:gravity="center"
+                    android:hint="1980"/>
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/RegisterPage2_V7TitleView_DividerText1"
+                    android:layout_width="31px"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize"
+                    android:gravity="center"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/RegisterPage2_V7TitleView_BirthMonth"
+                    android:background="@null"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize"
+                    android:gravity="center"
+                    android:hint="10"/>
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/RegisterPage2_V7TitleView_DividerText2"
+                    android:layout_width="31px"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize"
+                    android:gravity="center"
+                    android:text="/"/>
+
+                <EditText
+                    android:id="@+id/RegisterPage2_V7TitleView_BirthDay"
+                    android:background="@null"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize"
+                    android:gravity="center"
+                    android:hint="27"/>
+
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/RegisterPage2_RelativeLayout_Height"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/RegisterPage2_TextView_Height"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/RegisterPage2_Text_Height"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/RegisterPage2_EditText_Height"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/RegisterPage2_TextView_Height"
+                    android:background="@null"
+                    android:hint="@string/RegisterPage2_Hint_Height"
+                    android:singleLine="true"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RegisterPage2_RelativeLayout_Weight"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/RegisterPage2_TextView_Weight"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/RegisterPage2_Text_Weight"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <EditText
+                    android:id="@+id/RegisterPage2_EditText_Weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_toRightOf="@+id/RegisterPage2_TextView_Weight"
+                    android:background="@null"
+                    android:hint="@string/RegisterPage2_Hint_Weight"
+                    android:singleLine="true"
+                    android:textSize="40px" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/RegisterPage2_RelativeLayout_Gender"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/RegisterPage2_TextView_Gender"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/RegisterPage2_Text_Gender"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <RadioGroup
+                    android:id="@+id/RegisterPage2_RadioGroup_Gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/RegisterPage2_TextView_Gender"
+                    android:orientation="horizontal"
+                    android:theme="@style/RadioButton">
+                    <RadioButton
+                        android:id="@+id/Gender_RadioButton_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="男"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                    <RadioButton
+                        android:id="@+id/Gender_RadioButton_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="女"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                </RadioGroup>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/RegisterPage2_RelativeLayout_BloodType"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/RegisterPage2_TextView_BloodType"
+                    android:layout_width="200px"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20px"
+                    android:gravity="center"
+                    android:text="@string/RegisterPage2_Text_BloodType"
+                    android:textColor="@color/color_626262"
+                    android:textSize="40px" />
+
+                <RadioGroup
+                    android:id="@+id/RegisterPage2_RadioGroup_BloodType"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/RegisterPage2_TextView_BloodType"
+                    android:orientation="horizontal"
+                    android:theme="@style/RadioButton">
+                    <RadioButton
+                        android:id="@+id/BloodType_RadioButton_BloodType_A"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="A"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                    <RadioButton
+                        android:id="@+id/BloodType_RadioButton_BloodType_B"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="B"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                    <RadioButton
+                        android:id="@+id/BloodType_RadioButton_BloodType_O"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="O"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                    <RadioButton
+                        android:id="@+id/BloodType_RadioButton_BloodType_AB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="AB"
+                        android:layout_marginLeft="10px"
+                        android:textColor="@color/color_626262"
+                        android:textSize="40px"/>
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/RegisterPage2_V7TitleView_Send2"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/RegisterPage_Text_Send"
+                android:textColor="@android:color/black"
+                android:textSize="40px" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

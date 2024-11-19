@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ReportDescriptionPage1_RelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.ReportDescriptionPage1">
+
+    <RelativeLayout
+        android:id="@+id/ReportDescriptionPage1_RelativeLayout_Page0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.v7idea.template.View.AutoReleaseImageView
+            android:id="@+id/ReportDescriptionPage1_AutoReleaseImageView_Page0"
+            android:layout_width="606px"
+            android:layout_height="760px"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="68px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/report_description_page0" />
+
+        <TextView
+            android:id="@+id/ReportDescriptionPage1_TextView_Page0_Title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ReportDescriptionPage1_BottomButton_Page0"
+            android:layout_below="@+id/ReportDescriptionPage1_AutoReleaseImageView_Page0"
+            android:gravity="center"
+            android:text="【健康報告】\n導讀說明"
+            android:textColor="@color/color_A1E6F6"
+            android:textSize="52px" />
+
+        <com.v7idea.healthkit.View.BottomButton
+            android:id="@+id/ReportDescriptionPage1_BottomButton_Page0"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="26px" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ReportDescriptionPage1_RelativeLayout_PageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.v7idea.template.View.Banner
+            android:id="@+id/ReportDescriptionPage1_Banner_Header"
+            android:layout_width="match_parent"
+            android:layout_height="100px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ReportDescriptionPage1_BottomButton"
+            android:layout_below="@id/ReportDescriptionPage1_Banner_Header"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/ReportDescriptionPage1_AutoReleaseImageView"
+                android:layout_width="700px"
+                android:layout_height="1090px"
+                android:scaleType="fitXY"
+                android:src="@mipmap/report_description_page1" />
+
+        </LinearLayout>
+
+        <com.v7idea.healthkit.View.BottomButton
+            android:id="@+id/ReportDescriptionPage1_BottomButton"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26px"
+            android:layout_marginLeft="28px"
+            android:layout_marginRight="26px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

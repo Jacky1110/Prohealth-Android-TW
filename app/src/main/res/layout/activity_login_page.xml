@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginPage_RelativeLayout_BaseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="1334px"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.LoginPage">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/loginPage_SpecialImageView_Background"
+        android:layout_width="match_parent"
+        android:layout_height="36px"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_color_header" />
+
+    <ScrollView
+        android:id="@+id/loginPage_LockScrollView_ScrollArea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36px"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/activity_padding_left"
+        android:paddingRight="@dimen/activity_padding_right"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/loginPage_RelativeLayout_ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="27px">
+
+            <RelativeLayout
+                android:id="@+id/loginPage_RelativeLayout_TopBanner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/loginPage_SpecialImageView_TopBannerBackground"
+                    android:layout_width="696px"
+                    android:layout_height="558px"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/page_login_banner" />
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/loginPage_V7TitleView_TopBannerTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="124px"
+                    android:layout_below="@+id/loginPage_SpecialImageView_TopBannerBackground"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="@string/LoginPage_Title_MemberLogin"
+                    android:textColor="@color/color_9D9D9D_title"
+                    android:textSize="@dimen/TextSize" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/loginPage_EditText_inputAccount"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_below="@+id/loginPage_RelativeLayout_TopBanner"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/input_field_background_color_f5f5f5"
+                android:gravity="center_vertical"
+                android:hint="@string/LoginPage_Hint_Account"
+                android:inputType="phone"
+                android:paddingLeft="40px"
+                android:paddingRight="124px"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/color_838389_hint"
+                android:textSize="36px" />
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/loginPage_SpecialImageView_AccountFieldIcon"
+                android:layout_width="30px"
+                android:layout_height="40px"
+                android:layout_alignBottom="@+id/loginPage_EditText_inputAccount"
+                android:layout_alignRight="@+id/loginPage_EditText_inputAccount"
+                android:layout_alignTop="@+id/loginPage_EditText_inputAccount"
+                android:layout_marginBottom="30px"
+                android:layout_marginRight="40px"
+                android:layout_marginTop="30px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_gray_man" />
+
+            <EditText
+                android:id="@+id/loginPage_EditText_inputPassword"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_below="@+id/loginPage_EditText_inputAccount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10px"
+                android:background="@drawable/input_field_background_color_f5f5f5"
+                android:gravity="center_vertical"
+                android:hint="@string/LoginPage_Hint_Password"
+                android:inputType="textPassword"
+                android:paddingLeft="40px"
+                android:paddingRight="124px"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textColorHint="@color/color_838389_hint"
+                android:textSize="36px" />
+
+            <com.v7idea.template.View.AutoReleaseImageView
+                android:id="@+id/loginPage_SpecialImageView_PasswordFieldIcon"
+                android:layout_width="30px"
+                android:layout_height="40px"
+                android:layout_alignBottom="@+id/loginPage_EditText_inputPassword"
+                android:layout_alignRight="@+id/loginPage_EditText_inputPassword"
+                android:layout_alignTop="@+id/loginPage_EditText_inputPassword"
+                android:layout_marginBottom="27px"
+                android:layout_marginRight="42px"
+                android:layout_marginTop="27px"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/icon_gray_lock" />
+
+            <com.v7idea.healthkit.View.BottomButton
+                android:id="@+id/loginPage_BottomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginPage_EditText_inputPassword"
+                android:layout_marginTop="20px" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/loginPage_forget_password_textView"
+        android:layout_width="268px"
+        android:layout_height="66px"
+        android:layout_alignRight="@+id/loginPage_SpecialImageView_Background"
+        android:layout_below="@+id/loginPage_LockScrollView_ScrollArea"
+        android:layout_marginTop="56px"
+        android:gravity="right"
+        android:text="忘記密碼"
+        android:textColor="@color/color_AAE3F3"
+        android:textSize="48px" />
+</RelativeLayout>

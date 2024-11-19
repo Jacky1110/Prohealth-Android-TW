@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.LightDescriptionPage">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.v7idea.template.View.AutoReleaseImageView
+            android:id="@+id/LightDescriptionPage_AutoReleaseImageView_Banner"
+            android:layout_width="match_parent"
+            android:layout_height="632px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/link_device_top" />
+
+        <com.v7idea.template.View.AutoReleaseImageView
+            android:id="@+id/LightDescriptionPage_AutoReleaseImageView_BackImage"
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="20px"
+            android:scaleType="fitXY"
+            android:src="@mipmap/top_header_icon_home_blue" />
+
+        <TextView
+            android:id="@+id/LightDescriptionPage_TextView_Title"
+            android:layout_width="match_parent"
+            android:layout_height="56px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/LightDescriptionPage_AutoReleaseImageView_Banner"
+            android:layout_marginBottom="25px"
+            android:layout_marginLeft="50px"
+            android:layout_marginRight="50px"
+            android:layout_marginTop="32px"
+            android:gravity="left|center_vertical"
+            android:text="@string/LightDescriptionPage_Text_Title"
+            android:textColor="@color/color_A1E6F6"
+            android:textSize="@dimen/TextSize" />
+
+        <LinearLayout
+            android:id="@+id/LightDescriptionPage_LinearLayout_ItemContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/LightDescriptionPage_ImageTextView"
+            android:layout_below="@+id/LightDescriptionPage_TextView_Title"
+            android:layout_marginBottom="25px"
+            android:layout_marginLeft="40px"
+            android:layout_marginRight="@dimen/activity_padding_right"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon1"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_small_power" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item1"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item1"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon2"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_light_light" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item2"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item2"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon3"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_light_blue" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item3"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item3"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon4"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_light_green" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item4"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item4"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon5"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_light_light" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item5"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item5"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/LightDescriptionPage_ImageView_Icon6"
+                    android:layout_width="60px"
+                    android:layout_height="60px"
+                    android:gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/icon_light_red" />
+
+                <TextView
+                    android:id="@+id/LightDescriptionPage_TextView_Item6"
+                    android:layout_width="match_parent"
+                    android:layout_height="65px"
+                    android:layout_marginLeft="28px"
+                    android:gravity="center_vertical"
+                    android:text="@string/LightDescriptionPage_Text_Item6"
+                    android:textColor="@color/color_9B9B9B"
+                    android:textSize="28px" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <com.v7idea.healthkit.View.ImageTextView
+            android:id="@+id/LightDescriptionPage_ImageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="28px"
+            android:layout_marginLeft="27px"
+            android:layout_marginRight="27px">
+
+        </com.v7idea.healthkit.View.ImageTextView>
+    </RelativeLayout>
+</RelativeLayout>
+

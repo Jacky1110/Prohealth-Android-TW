@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.RegisterPage">
+
+    <ScrollView
+        android:id="@+id/RegisterPage_ScrollView_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/RegisterPage_LinearLayout_ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/RegisterPage_AutoReleaseImageView_BannerImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="412px"
+                    android:adjustViewBounds="true"
+                    android:scaleType="centerCrop"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/page_register_banner" />
+
+            </RelativeLayout>
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/RegisterPage_V7TitleView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18px"
+                android:gravity="center_vertical"
+                android:paddingLeft="50px"
+                android:paddingRight="52px"
+                android:text="@string/RegisterPage_Text_title"
+                android:textColor="@color/color_AAE3F3"
+                android:textSize="40px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_LastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_FirstName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_PhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+            <com.v7idea.healthkit.View.TitleEditTextView
+                android:id="@+id/RegisterPage_TitleEditTextView_ConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+
+            <com.v7idea.healthkit.View.BottomButton
+                android:id="@+id/RegisterPage_BottomButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="18px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="18px" />
+
+        </LinearLayout>
+
+    </ScrollView>l
+
+</RelativeLayout>

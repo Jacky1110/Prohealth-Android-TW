@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.v7idea.healthkit.TermsOfServicePage">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/TermsOfServicePage_SpecialImageView_Background"
+        android:layout_width="match_parent"
+        android:layout_height="36px"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_color_header" />
+
+    <WebView
+        android:id="@+id/TermsOfServicePage_WebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/TermsOfServicePage_LinearLayout_CheckBoxContainer"
+        android:layout_below="@+id/TermsOfServicePage_SpecialImageView_Background"
+        android:layout_marginBottom="0px"
+        android:layout_marginTop="50px">
+
+    </WebView>
+
+    <LinearLayout
+        android:id="@+id/TermsOfServicePage_LinearLayout_CheckBoxContainer"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="141px"
+        android:layout_above="@+id/TermsOfServicePage_BottomButton"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/TermsOfServicePage_ImageView_CheckIcon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:src="@drawable/check_box_selector"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/TermsOfServicePage_TextView_MiddleTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:text="@string/TermsOfServicePage_Text_CheckBox"
+            android:textColor="@color/color_666666"
+            android:textSize="38px"/>
+
+    </LinearLayout>
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/TermsOfServicePage_CheckBox"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="50px"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="58px"-->
+        <!--android:layout_above="@+id/TermsOfServicePage_BottomButton"-->
+        <!--android:layout_marginLeft="58px"-->
+        <!--android:layout_marginRight="58px"-->
+        <!--android:background="@null"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/TermsOfServicePage_Text_CheckBox"-->
+        <!--android:textColor="@color/color_666666"-->
+        <!--android:textSize="38px" />-->
+
+
+    <com.v7idea.healthkit.View.BottomButton
+        android:id="@+id/TermsOfServicePage_BottomButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28px"
+        android:layout_marginLeft="@dimen/activity_padding_left"
+        android:layout_marginRight="@dimen/activity_padding_right" />
+
+</RelativeLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.InputUserDataPage"
+    android:background="@android:color/white">
+
+    <ScrollView
+        android:id="@+id/InputUserDataPage_ScrollView_ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20px">
+
+        <LinearLayout
+            android:id="@+id/InputUserDataPage_LinearLayout_ScrollContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/InputUserDataPage_AutoReleaseImageView_BannerImage"
+                    android:layout_width="750px"
+                    android:layout_height="412px"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/page_register_banner" />
+
+                <com.v7idea.template.View.AutoReleaseImageView
+                    android:id="@+id/InputUserDataPage_AutoReleaseImageView_BackIcon"
+                    android:layout_width="64px"
+                    android:layout_height="64px"
+                    android:layout_marginLeft="15px"
+                    android:layout_marginTop="15px"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/page_register_button_back" />
+
+            </RelativeLayout>
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/InputUserDataPage_V7TitleView_Title"
+                android:layout_width="match_parent"
+                android:layout_height="160px"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_padding_left"
+                android:paddingRight="@dimen/activity_padding_right"
+                android:text="@string/InputUserDataPage_Text_title"
+                android:textColor="@color/color_91D6D0_title"
+                android:textSize="40px" />
+
+            <LinearLayout
+                android:id="@+id/InputUserDataPage_LinearLayout_BirthDayContainer"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:background="@drawable/input_field_background_color_f5f5f5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_BirthDayTitle"
+                    android:layout_width="190px"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/InputUserDataPage_Text_BirthDay"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <EditText
+                    android:id="@+id/InputUserDataPage_V7TitleView_BirthYear"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="1980"
+                    android:maxLength="4"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_DividerText1"
+                    android:layout_width="31px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <EditText
+                    android:id="@+id/InputUserDataPage_V7TitleView_BirthMonth"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="10"
+                    android:maxLength="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_DividerText2"
+                    android:layout_width="31px"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="/"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <EditText
+                    android:id="@+id/InputUserDataPage_V7TitleView_BirthDay"
+                    android:layout_width="148px"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:hint="27"
+                    android:maxLength="2"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/InputUserDataPage_RelativeLayout_GenderArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content">
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_GenderText"
+                    android:layout_width="190px"
+                    android:layout_height="128px"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/InputUserDataPage_Text_Gender"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <Spinner
+                    android:id="@+id/InputUserDataPage_Spinner_SelectGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="128px"
+                    android:layout_alignTop="@+id/InputUserDataPage_V7TitleView_GenderText"
+                    android:layout_toRightOf="@+id/InputUserDataPage_V7TitleView_GenderText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/InputUserDataPage_RelativeLayout_BloodArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content">
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_BloodText"
+                    android:layout_width="190px"
+                    android:layout_height="128px"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/InputUserDataPage_Text_Blood"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <Spinner
+                    android:id="@+id/InputUserDataPage_Spinner_SelectBlood"
+                    android:layout_width="match_parent"
+                    android:layout_height="128px"
+                    android:layout_alignTop="@+id/InputUserDataPage_V7TitleView_BloodText"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/InputUserDataPage_V7TitleView_BloodText" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/InputUserDataPage_RelativeLayout_ModeArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/gray_frame_white_content">
+
+                <com.v7idea.template.View.V7TitleView
+                    android:id="@+id/InputUserDataPage_V7TitleView_ModeText"
+                    android:layout_width="190px"
+                    android:layout_height="128px"
+                    android:gravity="center_vertical|right"
+                    android:text="@string/InputUserDataPage_Text_Mode"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/TextSize" />
+
+                <Spinner
+                    android:id="@+id/InputUserDataPage_Spinner_SelectMode"
+                    android:layout_width="match_parent"
+                    android:layout_height="128px"
+                    android:layout_alignTop="@+id/InputUserDataPage_V7TitleView_ModeText"
+                    android:layout_marginLeft="20px"
+                    android:layout_toRightOf="@+id/InputUserDataPage_V7TitleView_ModeText" />
+
+            </RelativeLayout>
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/InputUserDataPage_V7TitleView_Send"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/InputUserDataPage_Text_Send"
+                android:textColor="@android:color/black"
+                android:textSize="40px" />
+
+            <com.v7idea.template.View.V7TitleView
+                android:id="@+id/InputUserDataPage_V7TitleView_Modify"
+                android:layout_width="match_parent"
+                android:layout_height="128px"
+                android:layout_marginLeft="@dimen/activity_padding_left"
+                android:layout_marginRight="@dimen/activity_padding_right"
+                android:layout_marginTop="20px"
+                android:background="@drawable/button_selector"
+                android:gravity="center"
+                android:text="@string/InputUserDataPage_Text_Modify"
+                android:textColor="@android:color/black"
+                android:textSize="40px" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

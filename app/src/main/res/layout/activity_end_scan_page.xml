@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.v7idea.healthkit.EndScanPage">
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/EndScanPage_AutoReleaseImageView_BannerImage"
+        android:layout_width="match_parent"
+        android:layout_height="668px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/photo_device_big" />
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/EndScanPage_AutoReleaseImageView_BackImage"
+        android:layout_width="64px"
+        android:layout_height="64px"
+        android:layout_alignLeft="@+id/EndScanPage_AutoReleaseImageView_BannerImage"
+        android:layout_alignTop="@+id/EndScanPage_AutoReleaseImageView_BannerImage"
+        android:layout_marginLeft="20px"
+        android:layout_marginTop="20px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/top_header_icon_home_blue" />
+
+    <com.v7idea.template.View.AutoReleaseImageView
+        android:id="@+id/EndScanPage_AutoReleaseImageView_SuccessIcon"
+        android:layout_width="330px"
+        android:layout_height="330px"
+        android:layout_alignTop="@+id/EndScanPage_AutoReleaseImageView_BannerImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150px"
+        android:scaleType="fitXY"
+        android:src="@mipmap/device_measure_ok" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/EndScanPage_AutoReleaseImageView_BannerImage"
+        android:layout_alignParentBottom="true">
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/EndScanPage_V7TitleView_Complete"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/activity_padding_left"
+            android:layout_marginRight="@dimen/activity_padding_right"
+            android:background="@drawable/button_selector"
+            android:gravity="center"
+            android:text="@string/Complete"
+            android:textColor="@color/color_666666"
+            android:textSize="@dimen/TextSize" />
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/EndScanPage_V7TitleView_MiddleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:paddingLeft="50px"
+            android:layout_above="@+id/EndScanPage_V7TitleView_Complete"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingTop="24px"
+            android:text="@string/EndScan_Text_MiddleText1"
+            android:textColor="@color/color_9B9B9B"
+            android:textSize="36px" />
+
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/EndScanPage_V7TitleView_RemindTitle"
+            android:layout_width="150px"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/EndScanPage_V7TitleView_Complete"
+            android:layout_marginLeft="@dimen/activity_padding_left"
+            android:layout_marginTop="50px"
+            android:gravity="right"
+            android:text="@string/EndScan_Text_Remind_Title"
+            android:textColor="@color/color_9B9B9B"
+            android:textSize="36px" />
+
+        <com.v7idea.template.View.V7TitleView
+            android:id="@+id/EndScanPage_V7TitleView_RemindText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/EndScanPage_V7TitleView_Complete"
+            android:layout_marginRight="@dimen/activity_padding_right"
+            android:layout_marginTop="50px"
+            android:layout_toRightOf="@+id/EndScanPage_V7TitleView_RemindTitle"
+            android:gravity="left"
+            android:lineSpacingExtra="15px"
+            android:text="@string/EndScan_Text_Remind_Data"
+            android:textColor="@color/color_9B9B9B"
+            android:textSize="36px" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

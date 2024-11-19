@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="45px">
+
+    <com.v7idea.template.View.V7TitleView
+        android:id="@+id/selectListItem_V7TitleView_value"
+        android:layout_width="match_parent"
+        android:layout_height="128px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/black"
+        android:textSize="40px"
+        android:gravity="center"/>
+
+</RelativeLayout>
